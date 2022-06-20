@@ -1,0 +1,1041 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="themes/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#3e5058">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#3e5058">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3e5058">
+
+    <!--Page title-->
+    <title>NVD3 Charts - MaterialMe</title>
+    <!-- CSS  -->
+
+    <!--google material design icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--materializecss css-->
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!--Syntax Highlighter prism css-->
+    <link href="../../plugins/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!--nvd3 chart-->
+    <link href="../../plugins/nvd3/build/nv.d3.min.css" type="text/css" rel="stylesheet" />
+    <!--Custom css-->
+    <link href="../../css/app-style.css" type="text/css" rel="stylesheet" />
+    <!--page theme css-->
+    <link href="themes/app-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+
+    <nav id="me-navbar" class="white">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="dashboard.html" class="brand-logo">MaterialMe</a>
+            <div class="row m-l-sidbar m-b-t-no">
+                <div class="col l3 m6 s6" id="me-left-navbar">
+                    <ul class="left">
+                        <li><a href="#" data-activates="left-sidebar" class="waves-effect waves-default sidebar-collapse hide-on-large-only"><i class="material-icons">menu</i></a></li>
+                        <li id="notifications-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='notifications-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">3</span></a></li>
+                    </ul>
+                    <ul id='notifications-dropdown' class='dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 hide-on-med-and-down" id="me-desktop-search">
+                    <div class="col l12">
+                        <form class="desktop-search-box">
+                            <div class="input-field desktop-search-div">
+                                <input id="desktop-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="desktop-search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col m12 s12 hide-on-large-only" id="me-mobile-search">
+                    <div class="col m12 s12">
+                        <form class="mobile-search-box">
+                            <div class="input-field mobile-search-div">
+                                <input id="mobile-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="mobile-search"><i class="material-icons  waves-effect waves-default" id="me-hide-mobile-search">keyboard_backspace</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6" id="me-right-navbar">
+                    <ul class="right">
+                        <li class="hide-on-large-only"><a id="me-show-mobile-search" class="waves-effect waves-default"><i class="material-icons">search</i></a></li>
+                        <li id="user-account-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-pageRefresh" class="waves-effect waves-default"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-fullscreen" class="waves-effect waves-default"><i class="material-icons">fullscreen</i></a></li>
+                    </ul>
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="#!"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Left sidebar-->
+    <aside id="left-sidebar-nav">
+        <div id="left-sidebar" class="side-nav fixed">
+            <ul class="leftside-navigation">
+                <li class="navigation">Navigation</li>
+                <li><a href="dashboard.html" class="waves-effect waves-default"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">build</i><i class="material-icons right-icon right">arrow_drop_down</i>Material UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                            <li><a href="badges.html" class="waves-effect waves-default">Badges</a></li>
+                            <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                            <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                            <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                            <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                            <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                            <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                            <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                            <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                            <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon right">arrow_drop_down</i>CSS</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                            <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                            <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                            <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                            <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon right">arrow_drop_down</i>Advanced UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                            <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                            <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                            <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                            <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                            <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                            <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default active"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon right">arrow_drop_down</i>Charts</a>
+                    <div class="collapsible-body" style="display: block">
+                        <ul>
+                            <li><a href="chartjs.html" class="waves-effect waves-default">Chart JS</a></li>
+                            <li><a href="chartist.html" class="waves-effect waves-default">Chartist</a></li>
+                            <li><a href="morris-charts.html" class="waves-effect waves-default">Morris Charts</a></li>
+                            <li><a href="sparkline-charts.html" class="waves-effect waves-default">Sparkline Charts</a></li>
+                            <li><a href="NVD3-charts.html" class="waves-effect waves-default menu-active">NVD3 Charts</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">message</i><i class="material-icons right-icon right">arrow_drop_down</i>Forms</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                            <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                            <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                            <li><a href="html-form-validations.html" class="waves-effect waves-default">HTML Form Validations</a></li>
+                            <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                            <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon right">arrow_drop_down</i>Tables</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                            <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">home</i><i class="material-icons right-icon right">arrow_drop_down</i>Home</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="home/index.html" class="waves-effect waves-default">Landing Page</a></li>
+                            <li><a href="home/login.html" class="waves-effect waves-default">Login</a></li>
+                            <li><a href="home/signup.html" class="waves-effect waves-default">Signup</a></li>
+                            <li><a href="home/reset.html" class="waves-effect waves-default">Reset</a></li>
+                            <li><a href="home/lock.html" class="waves-effect waves-default">Lock</a></li>
+                            <li><a href="home/change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                            <li><a href="home/contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                            <li><a href="home/blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                            <li><a href="home/404.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="home/500.html" class="waves-effect waves-default">5oo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon right">arrow_drop_down</i>Pages</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404-dashboard.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="500-dashboard.html" class="waves-effect waves-default">5oo</a></li>
+                            <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="search.html" class="waves-effect waves-default"><i class="material-icons left-icon">search</i>Search Page</a></li>
+
+                <li><a href="grid.html" class="waves-effect waves-default"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+                <li><a href="color.html" class="waves-effect waves-default"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+                <li><a href="widgets.html" class="waves-effect waves-default"><i class="material-icons left-icon">widgets</i>widgets</a></li>
+               <li><a href="helpers.html" class="waves-effect waves-default"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+                <li><a href="docs.html" class="waves-effect waves-default"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+            </ul>
+            <div class="fixed sidebar-footer">
+                <ul>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Feedback">
+                            <i class="material-icons"> feedback </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Help">
+                            <i class="material-icons"> help </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="API">
+                            <i class="material-icons"> code </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--End left sidebar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+
+    <main>
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body title-->
+        <div class="me-page-title">
+            <!--Page Title-->
+            <h1>NVD3 Charts</h1>
+            <!--Page description-->
+            <p><a href="http://nvd3.org/index.html" target="_blank">NVD3</a> Re-usable charts for <a href="https://d3js.org/" target="_blank">d3.js</a>.</p>
+        </div>
+
+        <!--End page body title-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body content-->
+        <div class="me-page-body">
+            <div class="row">
+                <h2 class="col s12 header">Examples</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Line Chart</h3>
+                        <div class="card-panel">
+                            <div id="nvd3-example1" style="height: 380px;"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#nvd3-example1-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#nvd3-example1-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="nvd3-example1-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;div id="nvd3-example1" style="height: 380px;">&lt;/div>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="nvd3-example1-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+var chart;
+var data;
+var legendPosition = "top";
+
+var randomizeFillOpacity = function() {
+    var rand = Math.random(0, 1);
+    for (var i = 0; i < 100; i++) { // modify sine amplitude
+        data[4].values[i].y = Math.sin(i / (5 + rand)) * .4 * rand - .25;
+    }
+    data[4].fillOpacity = rand;
+    chart.update();
+};
+
+var toggleLegend = function() {
+    if (legendPosition == "top") {
+        legendPosition = "bottom";
+    } else {
+        legendPosition = "top";
+    }
+    chart.legendPosition(legendPosition);
+    chart.update();
+};
+
+nv.addGraph(function() {
+    chart = nv.models.lineChart()
+        .options({
+            duration: 300,
+            useInteractiveGuideline: true
+        });
+
+    // chart sub-models (ie. xAxis, yAxis, etc) when accessed directly, return themselves, not the parent chart, so need to chain separately
+    chart.xAxis
+        .axisLabel("Time (s)")
+        .tickFormat(d3.format(',.1f'))
+        .staggerLabels(true);
+
+    chart.yAxis
+        .axisLabel('Voltage (v)')
+        .tickFormat(function(d) {
+            if (d == null) {
+                return 'N/A';
+            }
+            return d3.format(',.2f')(d);
+        });
+
+    data = sinAndCos();
+
+    d3.select('#nvd3-example1').append('svg')
+        .datum(data)
+        .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+});
+
+function sinAndCos() {
+    var sin2 = [],
+        cos = [],
+        rand = [];
+    for (var i = 0; i < 100; i++) {
+
+        sin2.push({
+            x: i,
+            y: Math.sin(i / 5) * 0.4 - 0.25
+        });
+        cos.push({
+            x: i,
+            y: .5 * Math.cos(i / 10)
+        });
+        rand.push({
+            x: i,
+            y: Math.random() / 10
+        });
+
+    }
+
+    return [{
+        values: cos,
+        key: "Cosine Wave",
+        color: "#2ca02c"
+    }, {
+        values: rand,
+        key: "Random Points",
+        color: "#2222ff"
+    }, {
+        area: true,
+        values: sin2,
+        key: "Fill opacity",
+        color: "#EF9CFB",
+        fillOpacity: .1
+    }];
+}
+                        </code>
+                    </pre>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Bar Chart</h3>
+                        <div class="card-panel">
+                            <div id="nvd3-example2" style="height: 450px;"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#nvd3-example2-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#nvd3-example2-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="nvd3-example2-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;div id="nvd3-example2" style="height: 450px;">&lt;/div>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="nvd3-example2-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+/* Inspired by Lee Byron's test data generator. */
+function stream_layers(n, m, o) {
+    if (arguments.length < 3) o = 0;
+
+    function bump(a) {
+        var x = 1 / (.1 + Math.random()),
+            y = 2 * Math.random() - .5,
+            z = 10 / (.1 + Math.random());
+        for (var i = 0; i < m; i++) {
+            var w = (i / m - y) * z;
+            a[i] += x * Math.exp(-w * w);
+        }
+    }
+    return d3.range(n).map(function() {
+        var a = [],
+            i;
+        for (i = 0; i < m; i++) a[i] = o + o * Math.random();
+        for (i = 0; i < 5; i++) bump(a);
+        return a.map(stream_index);
+    });
+}
+
+/* Another layer generator using gamma distributions. */
+function stream_waves(n, m) {
+    return d3.range(n).map(function(i) {
+        return d3.range(m).map(function(j) {
+            var x = 20 * j / m - i / 3;
+            return 2 * x * Math.exp(-.5 * x);
+        }).map(stream_index);
+    });
+}
+
+function stream_index(d, i) {
+    return {
+        x: i,
+        y: Math.max(0, d)
+    };
+}
+
+
+
+var test_data = stream_layers(3, 10 + Math.random() * 100, .1).map(function(data, i) {
+    return {
+        key: 'Stream' + i,
+        values: data
+    };
+});
+
+console.log('td', test_data);
+
+var negative_test_data = new d3.range(0, 3).map(function(d, i) {
+    return {
+        key: 'Stream' + i,
+        values: new d3.range(0, 11).map(function(f, j) {
+            return {
+                y: 10 + Math.random() * 100 * (Math.floor(Math.random() * 100) % 2 ? 1 : -1),
+                x: j
+            }
+        })
+    };
+});
+
+var chart;
+nv.addGraph(function() {
+    chart = nv.models.multiBarChart()
+        .barColor(d3.scale.category20().range())
+        .duration(300)
+        .margin({
+            bottom: 100,
+            left: 70
+        })
+        .rotateLabels(45)
+        .groupSpacing(0.1);
+
+    chart.reduceXTicks(false).staggerLabels(true);
+
+    chart.xAxis
+        .axisLabel("ID of Furry Cat Households")
+        .axisLabelDistance(35)
+        .showMaxMin(false)
+        .tickFormat(d3.format(',.6f'));
+
+    chart.yAxis
+        .axisLabel("Change in Furry Cat Population")
+        .axisLabelDistance(-5)
+        .tickFormat(d3.format(',.01f'));
+
+    chart.dispatch.on('renderEnd', function() {
+        nv.log('Render Complete');
+    });
+
+    d3.select('#nvd3-example2').append('svg')
+        .datum(negative_test_data)
+        .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    chart.dispatch.on('stateChange', function(e) {
+        nv.log('New State:', JSON.stringify(e));
+    });
+    chart.state.dispatch.on('change', function(state) {
+        nv.log('state', JSON.stringify(state));
+    });
+
+    return chart;
+});
+
+                        </code>
+                    </pre>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Pie &amp; DonutChart</h3>
+                        <div class="card-panel">
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <div id="nvd3-example3" style="height: 340px;"></div>
+                                </div>
+                                <div class="col s12 l6">
+                                    <div id="nvd3-example4" style="height: 340px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#nvd3-example3-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#nvd3-example3-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="nvd3-example3-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;div id="nvd3-example3" style="height: 340px;">&lt;/div>
+&lt;div id="nvd3-example4" style="height: 340px;">&lt;/div>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="nvd3-example3-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+var testdata = [{
+    key: "One",
+    y: 5
+}, {
+    key: "Two",
+    y: 2
+}, {
+    key: "Three",
+    y: 9
+}, {
+    key: "Four",
+    y: 7
+}, {
+    key: "Five",
+    y: 4
+}, {
+    key: "Six",
+    y: 3
+}, {
+    key: "Seven",
+    y: 0.5
+}];
+
+var width = 320;
+var height = 320;
+
+nv.addGraph(function() {
+    var chart = nv.models.pie()
+        .x(function(d) {
+            return d.key;
+        })
+        .y(function(d) {
+            return d.y;
+        })
+        .width(width)
+        .height(height)
+        .labelType(function(d, i, values) {
+            return values.key + ':' + values.value;
+        });
+
+    d3.select('#nvd3-example3').append('svg')
+        .datum([testdata])
+        .transition().duration(1200)
+        .attr('width', width)
+        .attr('height', height)
+        .call(chart);
+    return chart;
+});
+
+nv.addGraph(function() {
+    var chart = nv.models.pie()
+        .x(function(d) {
+            return d.key;
+        })
+        .y(function(d) {
+            return d.y;
+        })
+        .width(width)
+        .height(height)
+        .labelType('percent')
+        .valueFormat(d3.format('%'))
+        .donut(true);
+
+    d3.select('#nvd3-example4').append('svg')
+        .datum([testdata])
+        .transition().duration(1200)
+        .attr('width', width)
+        .attr('height', height)
+        .call(chart);
+
+    return chart;
+});
+                        </code>
+                    </pre>
+
+                    </div>
+                </div>
+                <div class="col s12">
+                    <blockquote class="m-t-20">
+                        Find more example from <a href="http://nvd3.org/examples/index.html" target="_blank">here</a>.
+                    </blockquote>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--End page body content-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+
+    <footer class="page-footer white" id="me-footer">
+        <div class="footer-copyright">
+            <div class="left copyright-text">
+                &copy; MaterialMe
+            </div>
+            <div class="right resources-box">
+                <ul>
+                    <li><a href="#">Terms of Ser.</a></li>
+                    <li><a href="#">SLA</a></li>
+                    <li><a href="#">Pri. &amp; terms</a></li>
+                    <li id="scroll-top-dash"><i class="material-icons">arrow_upward</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Materializecss js -->
+    <script src="../../js/materialize.min.js"></script>
+    <!--Syntax Highlighter prism js-->
+    <script src="../../plugins/prism/prism.js"></script>
+    <!--nvd3 and d3 chart-->
+    <script src="../../plugins/nvd3/d3/d3.min.js"></script>
+    <script src="../../plugins/nvd3/build/nv.d3.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../../js/init.js"></script>
+    <!--nvd3 chart example-->
+    <script>
+        /*line chart*/
+
+        var chart;
+        var data;
+        var legendPosition = "top";
+
+        var randomizeFillOpacity = function() {
+            var rand = Math.random(0, 1);
+            for (var i = 0; i < 100; i++) { // modify sine amplitude
+                data[4].values[i].y = Math.sin(i / (5 + rand)) * .4 * rand - .25;
+            }
+            data[4].fillOpacity = rand;
+            chart.update();
+        };
+
+        var toggleLegend = function() {
+            if (legendPosition == "top") {
+                legendPosition = "bottom";
+            } else {
+                legendPosition = "top";
+            }
+            chart.legendPosition(legendPosition);
+            chart.update();
+        };
+
+        nv.addGraph(function() {
+            chart = nv.models.lineChart()
+                .options({
+                    duration: 300,
+                    useInteractiveGuideline: true
+                });
+
+            // chart sub-models (ie. xAxis, yAxis, etc) when accessed directly, return themselves, not the parent chart, so need to chain separately
+            chart.xAxis
+                .axisLabel("Time (s)")
+                .tickFormat(d3.format(',.1f'))
+                .staggerLabels(true);
+
+            chart.yAxis
+                .axisLabel('Voltage (v)')
+                .tickFormat(function(d) {
+                    if (d == null) {
+                        return 'N/A';
+                    }
+                    return d3.format(',.2f')(d);
+                });
+
+            data = sinAndCos();
+
+            d3.select('#nvd3-example1').append('svg')
+                .datum(data)
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            return chart;
+        });
+
+        function sinAndCos() {
+            var sin2 = [],
+                cos = [],
+                rand = [];
+            for (var i = 0; i < 100; i++) {
+
+                sin2.push({
+                    x: i,
+                    y: Math.sin(i / 5) * 0.4 - 0.25
+                });
+                cos.push({
+                    x: i,
+                    y: .5 * Math.cos(i / 10)
+                });
+                rand.push({
+                    x: i,
+                    y: Math.random() / 10
+                });
+
+            }
+
+            return [{
+                values: cos,
+                key: "Cosine Wave",
+                color: "#2ca02c"
+            }, {
+                values: rand,
+                key: "Random Points",
+                color: "#2222ff"
+            }, {
+                area: true,
+                values: sin2,
+                key: "Fill opacity",
+                color: "#EF9CFB",
+                fillOpacity: .1
+            }];
+        }
+
+        /*Bar Chart*/
+
+
+        /* Inspired by Lee Byron's test data generator. */
+        function stream_layers(n, m, o) {
+            if (arguments.length < 3) o = 0;
+
+            function bump(a) {
+                var x = 1 / (.1 + Math.random()),
+                    y = 2 * Math.random() - .5,
+                    z = 10 / (.1 + Math.random());
+                for (var i = 0; i < m; i++) {
+                    var w = (i / m - y) * z;
+                    a[i] += x * Math.exp(-w * w);
+                }
+            }
+            return d3.range(n).map(function() {
+                var a = [],
+                    i;
+                for (i = 0; i < m; i++) a[i] = o + o * Math.random();
+                for (i = 0; i < 5; i++) bump(a);
+                return a.map(stream_index);
+            });
+        }
+
+        /* Another layer generator using gamma distributions. */
+        function stream_waves(n, m) {
+            return d3.range(n).map(function(i) {
+                return d3.range(m).map(function(j) {
+                    var x = 20 * j / m - i / 3;
+                    return 2 * x * Math.exp(-.5 * x);
+                }).map(stream_index);
+            });
+        }
+
+        function stream_index(d, i) {
+            return {
+                x: i,
+                y: Math.max(0, d)
+            };
+        }
+
+
+
+        var test_data = stream_layers(3, 10 + Math.random() * 100, .1).map(function(data, i) {
+            return {
+                key: 'Stream' + i,
+                values: data
+            };
+        });
+
+        console.log('td', test_data);
+
+        var negative_test_data = new d3.range(0, 3).map(function(d, i) {
+            return {
+                key: 'Stream' + i,
+                values: new d3.range(0, 11).map(function(f, j) {
+                    return {
+                        y: 10 + Math.random() * 100 * (Math.floor(Math.random() * 100) % 2 ? 1 : -1),
+                        x: j
+                    }
+                })
+            };
+        });
+
+        var chart;
+        nv.addGraph(function() {
+            chart = nv.models.multiBarChart()
+                .barColor(d3.scale.category20().range())
+                .duration(300)
+                .margin({
+                    bottom: 100,
+                    left: 70
+                })
+                .rotateLabels(45)
+                .groupSpacing(0.1);
+
+            chart.reduceXTicks(false).staggerLabels(true);
+
+            chart.xAxis
+                .axisLabel("ID of Furry Cat Households")
+                .axisLabelDistance(35)
+                .showMaxMin(false)
+                .tickFormat(d3.format(',.6f'));
+
+            chart.yAxis
+                .axisLabel("Change in Furry Cat Population")
+                .axisLabelDistance(-5)
+                .tickFormat(d3.format(',.01f'));
+
+            chart.dispatch.on('renderEnd', function() {
+                nv.log('Render Complete');
+            });
+
+            d3.select('#nvd3-example2').append('svg')
+                .datum(negative_test_data)
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            chart.dispatch.on('stateChange', function(e) {
+                nv.log('New State:', JSON.stringify(e));
+            });
+            chart.state.dispatch.on('change', function(state) {
+                nv.log('state', JSON.stringify(state));
+            });
+
+            return chart;
+        });
+
+        /*Pie and donut Chart*/
+
+        var testdata = [{
+            key: "One",
+            y: 5
+        }, {
+            key: "Two",
+            y: 2
+        }, {
+            key: "Three",
+            y: 9
+        }, {
+            key: "Four",
+            y: 7
+        }, {
+            key: "Five",
+            y: 4
+        }, {
+            key: "Six",
+            y: 3
+        }, {
+            key: "Seven",
+            y: 0.5
+        }];
+
+        var width = 320;
+        var height = 320;
+
+        nv.addGraph(function() {
+            var chart = nv.models.pie()
+                .x(function(d) {
+                    return d.key;
+                })
+                .y(function(d) {
+                    return d.y;
+                })
+                .width(width)
+                .height(height)
+                .labelType(function(d, i, values) {
+                    return values.key + ':' + values.value;
+                });
+
+            d3.select('#nvd3-example3').append('svg')
+                .datum([testdata])
+                .transition().duration(1200)
+                .attr('width', width)
+                .attr('height', height)
+                .call(chart);
+            return chart;
+        });
+
+        nv.addGraph(function() {
+            var chart = nv.models.pie()
+                .x(function(d) {
+                    return d.key;
+                })
+                .y(function(d) {
+                    return d.y;
+                })
+                .width(width)
+                .height(height)
+                .labelType('percent')
+                .valueFormat(d3.format('%'))
+                .donut(true);
+
+            d3.select('#nvd3-example4').append('svg')
+                .datum([testdata])
+                .transition().duration(1200)
+                .attr('width', width)
+                .attr('height', height)
+                .call(chart);
+
+            return chart;
+        });
+    </script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

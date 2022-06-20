@@ -1,0 +1,1853 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="themes/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#258429">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#258429">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#258429">
+    <!--Page title-->
+    <title>Form Elements - MaterialMe</title>
+    <!-- CSS  -->
+
+    <!--google material design icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--materializecss css-->
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!--Syntax Highlighter prism css-->
+    <link href="../../plugins/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!--Custom css-->
+    <link href="../../css/app-style.css" type="text/css" rel="stylesheet" />
+    <!--page theme css-->
+    <link href="themes/app-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+    <nav id="me-navbar" class="white">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="dashboard.html" class="brand-logo">MaterialMe</a>
+            <div class="row m-l-sidbar m-b-t-no">
+                <div class="col l3 m6 s6" id="me-left-navbar">
+                    <ul class="left">
+                        <li><a href="#" data-activates="left-sidebar" class="waves-effect waves-default sidebar-collapse hide-on-large-only"><i class="material-icons">menu</i></a></li>
+                        <li id="notifications-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='notifications-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">3</span></a></li>
+                    </ul>
+                    <ul id='notifications-dropdown' class='dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 hide-on-med-and-down" id="me-desktop-search">
+                    <div class="col l12">
+                        <form class="desktop-search-box">
+                            <div class="input-field desktop-search-div">
+                                <input id="desktop-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="desktop-search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col m12 s12 hide-on-large-only" id="me-mobile-search">
+                    <div class="col m12 s12">
+                        <form class="mobile-search-box">
+                            <div class="input-field mobile-search-div">
+                                <input id="mobile-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="mobile-search"><i class="material-icons  waves-effect waves-default" id="me-hide-mobile-search">keyboard_backspace</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6" id="me-right-navbar">
+                    <ul class="right">
+                        <li class="hide-on-large-only"><a id="me-show-mobile-search" class="waves-effect waves-default"><i class="material-icons">search</i></a></li>
+                        <li id="user-account-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-pageRefresh" class="waves-effect waves-default"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-fullscreen" class="waves-effect waves-default"><i class="material-icons">fullscreen</i></a></li>
+                    </ul>
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="#!"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Left sidebar-->
+    <aside id="left-sidebar-nav">
+        <div id="left-sidebar" class="side-nav fixed">
+            <ul class="leftside-navigation">
+                <li class="navigation">Navigation</li>
+                <li><a href="dashboard.html" class="waves-effect waves-default"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">build</i><i class="material-icons right-icon right">arrow_drop_down</i>Material UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                            <li><a href="badges.html" class="waves-effect waves-default">Badges</a></li>
+                            <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                            <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                            <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                            <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                            <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                            <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                            <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                            <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                            <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon right">arrow_drop_down</i>CSS</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                            <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                            <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                            <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                            <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon right">arrow_drop_down</i>Advanced UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                            <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                            <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                            <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                            <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                            <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                            <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon right">arrow_drop_down</i>Charts</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chartjs.html" class="waves-effect waves-default">Chart JS</a></li>
+                            <li><a href="chartist.html" class="waves-effect waves-default">Chartist</a></li>
+                            <li><a href="morris-charts.html" class="waves-effect waves-default">Morris Charts</a></li>
+                            <li><a href="sparkline-charts.html" class="waves-effect waves-default">Sparkline Charts</a></li>
+                            <li><a href="NVD3-charts.html" class="waves-effect waves-default">NVD3 Charts</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default active"><i class="material-icons left-icon">message</i><i class="material-icons right-icon right">arrow_drop_down</i>Forms</a>
+                    <div class="collapsible-body" style="display: block">
+                        <ul>
+                            <li><a href="form-elements.html" class="waves-effect waves-default menu-active">Form Elements</a></li>
+                            <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                            <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                            <li><a href="html-form-validations.html" class="waves-effect waves-default">HTML Form Validations</a></li>
+                            <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                            <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon right">arrow_drop_down</i>Tables</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                            <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">home</i><i class="material-icons right-icon right">arrow_drop_down</i>Home</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="home/index.html" class="waves-effect waves-default">Landing Page</a></li>
+                            <li><a href="home/login.html" class="waves-effect waves-default">Login</a></li>
+                            <li><a href="home/signup.html" class="waves-effect waves-default">Signup</a></li>
+                            <li><a href="home/reset.html" class="waves-effect waves-default">Reset</a></li>
+                            <li><a href="home/lock.html" class="waves-effect waves-default">Lock</a></li>
+                            <li><a href="home/change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                            <li><a href="home/contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                            <li><a href="home/blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                            <li><a href="home/404.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="home/500.html" class="waves-effect waves-default">5oo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon right">arrow_drop_down</i>Pages</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404-dashboard.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="500-dashboard.html" class="waves-effect waves-default">5oo</a></li>
+                            <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="search.html" class="waves-effect waves-default"><i class="material-icons left-icon">search</i>Search Page</a></li>
+
+                <li><a href="grid.html" class="waves-effect waves-default"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+                <li><a href="color.html" class="waves-effect waves-default"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+                <li><a href="widgets.html" class="waves-effect waves-default"><i class="material-icons left-icon">widgets</i>widgets</a></li>
+               <li><a href="helpers.html" class="waves-effect waves-default"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+                <li><a href="docs.html" class="waves-effect waves-default"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+            </ul>
+            <div class="fixed sidebar-footer">
+                <ul>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Feedback">
+                            <i class="material-icons"> feedback </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Help">
+                            <i class="material-icons"> help </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="API">
+                            <i class="material-icons"> code </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--End left sidebar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+    <main>
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body title-->
+        <div class="me-page-title">
+            <!--Page Title-->
+            <h1>Forms Elements</h1>
+            <!--Page description-->
+            <p>Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.</p>
+        </div>
+        <!--End page body title-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body content-->
+        <div class="me-page-body">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Input fields</h2>
+                    <p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code class=" language-markup">.input-field</code> div wrapping your input and label.
+                        This helps our jQuery animate the label. This is only used in our Input and Textarea form elements.</p>
+                    <p>The validate class leverages HTML5 validation and will add a <code class=" language-markup">valid</code> and <code class=" language-markup">invalid</code> class accordingly. If you don't want the Green and Red validation states, just
+                        remove the <code class=" language-markup">validate</code> class from your inputs.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <form class="col s12 me-form">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <label for="first_name" class="active">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input disabled="" value="I am not editable" id="disabled" type="text" class="validate">
+                                    <label for="disabled" class="active">Disabled</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    This is an inline input field:
+                                    <div class="input-field inline">
+                                        <input id="email1" type="email" class="validate">
+                                        <label for="email1" data-error="wrong" data-success="right">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#input1-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input1-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+    &lt;form class="col s12">
+        &lt;div class="row">
+        &lt;div class="input-field col s6">
+            &lt;input placeholder="Placeholder" id="first_name" type="text" class="validate">
+            &lt;label for="first_name">First Name&lt;/label>
+        &lt;/div>
+        &lt;div class="input-field col s6">
+            &lt;input id="last_name" type="text" class="validate">
+            &lt;label for="last_name">Last Name&lt;/label>
+        &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            &lt;label for="disabled">Disabled&lt;/label>
+        &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;input id="password" type="password" class="validate">
+            &lt;label for="password">Password&lt;/label>
+        &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;input id="email" type="email" class="validate">
+            &lt;label for="email">Email&lt;/label>
+        &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+        &lt;div class="col s12">
+            This is an inline input field:
+            &lt;div class="input-field inline">
+            &lt;input id="email1" type="email" class="validate">
+            &lt;label for="email1" data-error="wrong" data-success="right">Email&lt;/label>
+            &lt;/div>
+        &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Prefilling Text Inputs</h2>
+                    <p>If you are having trouble with the labels overlapping prefilled content, Try adding <code class="language-markup">class="active"</code> to the label. <br />You can also call the function <code class="language-javascript">Materialize.updateTextFields();</code>                        to reinitialize all the Materialize labels on the page if you are dynamically adding inputs.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input value="Alvin" id="first_name2" type="text" class="validate">
+                            <label class="active" for="first_name2">First Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#input2-html">HTML</a></li>
+                        <li class="tab"><a href="#input2-js">JS</a></li>
+                    </ul>
+                </div>
+                <div id="input2-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+    &lt;div class="input-field col s6">
+        &lt;input value="Alvin" id="first_name2" type="text" class="validate">
+        &lt;label class="active" for="first_name2">First Name&lt;/label>
+    &lt;/div>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="input2-js" class="col s12">
+                    <pre>
+                        <code class="language-javascript">
+$(document).ready(function() {
+    Materialize.updateTextFields();
+})
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Icon Prefixes</h2>
+                    <p>You can add an icon prefix to make the form input label even more clear. Just add an icon with the class <code class=" language-markup">prefix</code> before the input and label.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Telephone</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input3-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input3-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+    &lt;form class="col s12">
+        &lt;div class="row">
+        &lt;div class="input-field col s6">
+            &lt;i class="material-icons prefix">account_circle&lt;/i>
+            &lt;input id="icon_prefix" type="text" class="validate">
+            &lt;label for="icon_prefix">First Name&lt;/label>
+        &lt;/div>
+        &lt;div class="input-field col s6">
+            &lt;i class="material-icons prefix">phone&lt;/i>
+            &lt;input id="icon_telephone" type="tel" class="validate">
+            &lt;label for="icon_telephone">Telephone&lt;/label>
+        &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Custom Error or Success Messages</h2>
+                    <p>You can add custom validation messages by adding either <code class=" language-markup">data-error</code> or <code class=" language-markup">data-success</code> attributes to your input field labels.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email2" type="email" class="validate">
+                                    <label for="email2" data-error="wrong" data-success="right">Email</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input4-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input4-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+    &lt;form class="col s12">
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;input id="email2" type="email" class="validate">
+            &lt;label for="email2" data-error="wrong" data-success="right">Email&lt;/label>
+        &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Changing colors</h2>
+                    <p>Here is a CSS template for modifying input fields in CSS. With Sass, you can achieve this by just changing a variable. The CSS shown below is unprefixed. Depending on what you use, you may have to change the type attribute selector.</p>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input5-css">CSS</a></li>
+                    </ul>
+                </div>
+                <div id="input5-css" class="col s12">
+                    <pre>
+                        <code class="language-css">
+/* label color */
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Textarea</h2>
+                    <p>Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code class=" language-markup">.input-field</code> div wrapping your
+                        input and label. This helps our jQuery animate the label. This is only used in our Input and Textarea form elements.</p>
+                    <p><strong>Textareas will auto resize to the text inside.</strong></p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Textarea</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                    <label for="icon_prefix2">Message</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input6-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input6-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+    &lt;form class="col s12">
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;textarea id="textarea1" class="materialize-textarea">&lt;/textarea>
+            &lt;label for="textarea1">Textarea&lt;/label>
+        &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+
+&lt;div class="row">
+    &lt;form class="col s12">
+        &lt;div class="row">
+        &lt;div class="input-field col s12">
+            &lt;i class="material-icons prefix">mode_edit&lt;/i>
+            &lt;textarea id="icon_prefix2" class="materialize-textarea">&lt;/textarea>
+            &lt;label for="icon_prefix2">Message&lt;/label>
+        &lt;/div>
+        &lt;/div>
+    &lt;/form>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Select</h2>
+                    <p> Select allows user input through specified options. Make sure you wrap it in a <code class=" language-markup">.input-field</code> for proper alignment with other text fields. Remember that this is a jQuery plugin so make sure you initialize
+                        this in your document ready. </p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            </select>
+                            <label>Materialize Select</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select multiple>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            </select>
+                            <label>Materialize Multiple Select</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select multiple>
+                            <optgroup label="team 1">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </optgroup>
+                            <optgroup label="team 2">
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                            </optgroup>
+                            </select>
+                            <label>Optgroups</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <select class="icons">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="" data-icon="../../img/sample-1.jpg" class="circle">example 1</option>
+                            <option value="" data-icon="../../img/materializecss.png" class="circle">example 2</option>
+                            <option value="" data-icon="../../img/yuna.jpg" class="circle">example 1</option>
+                            </select>
+                            <label>Images in select</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <select class="icons">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="" data-icon="../../img/sample-1.jpg" class="left circle">example 1</option>
+                            <option value="" data-icon="../../img/materializecss.png" class="left circle">example 2</option>
+                            <option value="" data-icon="../../img/yuna.jpg" class="left circle">example 3</option>
+                            </select>
+                            <label>Images in select</label>
+                        </div>
+
+                        <label>Browser Select</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+                        <label>Materialize Disabled</label>
+                        <select disabled>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+                        <label>Browser Disabled</label>
+                        <select class="browser-default" disabled>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#input7-html">HTML</a></li>
+                        <li class="tab"><a href="#input7-js">js</a></li>
+                    </ul>
+                </div>
+                <div id="input7-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="row">
+  &lt;div class="input-field col s12">
+    &lt;select>
+      &lt;option value="" disabled selected>Choose your option&lt;/option>
+      &lt;option value="1">Option 1&lt;/option>
+      &lt;option value="2">Option 2&lt;/option>
+      &lt;option value="3">Option 3&lt;/option>
+    &lt;/select>
+    &lt;label>Materialize Select&lt;/label>
+  &lt;/div>
+
+  &lt;div class="input-field col s12">
+    &lt;select multiple>
+      &lt;option value="" disabled selected>Choose your option&lt;/option>
+      &lt;option value="1">Option 1&lt;/option>
+      &lt;option value="2">Option 2&lt;/option>
+      &lt;option value="3">Option 3&lt;/option>
+    &lt;/select>
+    &lt;label>Materialize Multiple Select&lt;/label>
+  &lt;/div>
+
+  &lt;div class="input-field col s12">
+    &lt;select multiple>
+      &lt;optgroup label="team 1">
+        &lt;option value="1">Option 1&lt;/option>
+        &lt;option value="2">Option 2&lt;/option>
+      &lt;/optgroup>
+      &lt;optgroup label="team 2">
+        &lt;option value="3">Option 3&lt;/option>
+        &lt;option value="4">Option 4&lt;/option>
+      &lt;/optgroup>
+    &lt;/select>
+    &lt;label>Optgroups&lt;/label>
+  &lt;/div>
+
+  &lt;div class="input-field col s12 m6">
+    &lt;select class="icons">
+      &lt;option value="" disabled selected>Choose your option&lt;/option>
+      &lt;option value="" data-icon="../../img/sample-1.jpg" class="circle">example 1&lt;/option>
+      &lt;option value="" data-icon="../../img/office.jpg" class="circle">example 2&lt;/option>
+      &lt;option value="" data-icon="../../img/yuna.jpg" class="circle">example 1&lt;/option>
+    &lt;/select>
+    &lt;label>Images in select&lt;/label>
+  &lt;/div>
+  &lt;div class="input-field col s12 m6">
+    &lt;select class="icons">
+      &lt;option value="" disabled selected>Choose your option&lt;/option>
+      &lt;option value="" data-icon="../../img/sample-1.jpg" class="left circle">example 1&lt;/option>
+      &lt;option value="" data-icon="../../img/office.jpg" class="left circle">example 2&lt;/option>
+      &lt;option value="" data-icon="../../img/yuna.jpg" class="left circle">example 3&lt;/option>
+    &lt;/select>
+    &lt;label>Images in select&lt;/label>
+  &lt;/div>
+
+  &lt;label>Browser Select&lt;/label>
+  &lt;select class="browser-default">
+    &lt;option value="" disabled selected>Choose your option&lt;/option>
+    &lt;option value="1">Option 1&lt;/option>
+    &lt;option value="2">Option 2&lt;/option>
+    &lt;option value="3">Option 3&lt;/option>
+  &lt;/select>
+
+  &lt;label>Materialize Disabled&lt;/label>
+  &lt;select disabled>
+    &lt;option value="" disabled selected>Choose your option&lt;/option>
+    &lt;option value="1">Option 1&lt;/option>
+    &lt;option value="2">Option 2&lt;/option>
+    &lt;option value="3">Option 3&lt;/option>
+  &lt;/select>
+
+  &lt;label>Browser Disabled&lt;/label>
+  &lt;select class="browser-default" disabled>
+    &lt;option value="" disabled selected>Choose your option&lt;/option>
+    &lt;option value="1">Option 1&lt;/option>
+    &lt;option value="2">Option 2&lt;/option>
+    &lt;option value="3">Option 3&lt;/option>
+  &lt;/select>
+&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="input7-js" class="col s12">
+                    <pre>
+                        <code class="language-javascript">
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Radio Buttons</h2>
+                    <p>Radio Buttons are used when the user must make only one selection out of a group of items.</p>
+                </div>
+                <div class="row">
+                    <div class="col s12 m-t-10">
+                        <div class="row">
+                            <h3 class="header">Default</h3>
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test1" class="default" />
+                                        <label for="r-test1">Default</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test2" checked class="red" />
+                                        <label for="r-test2">Red</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test3" class="yellow" />
+                                        <label for="r-test3">Yellow</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test4" class="green" />
+                                        <label for="r-test4">Green</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test5" disabled="disabled" />
+                                        <label for="r-test5">Disabled</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input name="group1" type="radio" checked id="r-test6" class="pink" />
+                                        <label for="r-test6">Pink</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test7" class="purple" />
+                                        <label for="r-test7">Purple</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test8" class="deep-purple" />
+                                        <label for="r-test8">Deep Purple</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test9" class="indigo" />
+                                        <label for="r-test9">Indigo</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test10" class="teal" />
+                                        <label for="r-test10">Teal</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#input8-html">HTML</a></li>
+                        </ul>
+                    </div>
+                    <div id="input8-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;form action=&quot;#&quot;&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test1&quot; class=&quot;default&quot; /&gt;
+        &lt;label for=&quot;r-test1&quot;&gt;Default&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test2&quot; checked class=&quot;red&quot; /&gt;
+        &lt;label for=&quot;r-test2&quot;&gt;Red&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test3&quot; class=&quot;yellow&quot; /&gt;
+        &lt;label for=&quot;r-test3&quot;&gt;Yellow&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test4&quot; class=&quot;green&quot; /&gt;
+        &lt;label for=&quot;r-test4&quot;&gt;Green&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test5&quot; disabled=&quot;disabled&quot; /&gt;
+        &lt;label for=&quot;r-test5&quot;&gt;Disabled&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; checked id=&quot;r-test6&quot; class=&quot;pink&quot; /&gt;
+        &lt;label for=&quot;r-test6&quot;&gt;Pink&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test7&quot; class=&quot;purple&quot; /&gt;
+        &lt;label for=&quot;r-test7&quot;&gt;Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test8&quot; class=&quot;deep-purple&quot; /&gt;
+        &lt;label for=&quot;r-test8&quot;&gt;Deep Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test9&quot; class=&quot;indigo&quot; /&gt;
+        &lt;label for=&quot;r-test9&quot;&gt;Indigo&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test10&quot; class=&quot;teal&quot; /&gt;
+        &lt;label for=&quot;r-test10&quot;&gt;Teal&lt;/label&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m-t-10">
+                        <div class="row">
+                            <h3 class="header">With Gap</h3>
+                            <p>To create a radio button with a gap, add <code class=" language-markup">class="with-gap"</code> to your input. See the example below.</p>
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test11" checked class="with-gap default" />
+                                        <label for="r-test11">Default</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test12" class="with-gap red" />
+                                        <label for="r-test12">Red</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test13" class="with-gap yellow" />
+                                        <label for="r-test13">Yellow</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test14" class="with-gap green" />
+                                        <label for="r-test14">Green</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test15" disabled="disabled" class="with-gap" />
+                                        <label for="r-test15">Disabled</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input name="group1" type="radio" checked id="r-test16" class="with-gap pink" />
+                                        <label for="r-test16">Pink</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test17" class="with-gap purple" />
+                                        <label for="r-test17">Purple</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test18" class="with-gap deep-purple" />
+                                        <label for="r-test18">Deep Purple</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test19" class="with-gap indigo" />
+                                        <label for="r-test19">Indigo</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="r-test20" class="with-gap teal" />
+                                        <label for="r-test20">Teal</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#input45-html">HTML</a></li>
+                        </ul>
+                    </div>
+                    <div id="input45-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;form action=&quot;#&quot;&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test11&quot; checked class=&quot;with-gap default&quot; /&gt;
+        &lt;label for=&quot;r-test11&quot;&gt;Default&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test12&quot; class=&quot;with-gap red&quot; /&gt;
+        &lt;label for=&quot;r-test12&quot;&gt;Red&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test13&quot; class=&quot;with-gap yellow&quot; /&gt;
+        &lt;label for=&quot;r-test13&quot;&gt;Yellow&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test14&quot; class=&quot;with-gap green&quot; /&gt;
+        &lt;label for=&quot;r-test14&quot;&gt;Green&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test15&quot; disabled=&quot;disabled&quot; class=&quot;with-gap&quot; /&gt;
+        &lt;label for=&quot;r-test15&quot;&gt;Disabled&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; checked id=&quot;r-test16&quot; class=&quot;with-gap pink&quot; /&gt;
+        &lt;label for=&quot;r-test16&quot;&gt;Pink&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test17&quot; class=&quot;with-gap purple&quot; /&gt;
+        &lt;label for=&quot;r-test17&quot;&gt;Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test18&quot; class=&quot;with-gap deep-purple&quot; /&gt;
+        &lt;label for=&quot;r-test18&quot;&gt;Deep Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test19&quot; class=&quot;with-gap indigo&quot; /&gt;
+        &lt;label for=&quot;r-test19&quot;&gt;Indigo&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input name=&quot;group1&quot; type=&quot;radio&quot; id=&quot;r-test20&quot; class=&quot;with-gap teal&quot; /&gt;
+        &lt;label for=&quot;r-test20&quot;&gt;Teal&lt;/label&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Checkboxes</h2>
+                    <p>Use checkboxes when looking for yes or no answers. The <code class=" language-markup">for</code> attribute is necessary to bind our custom checkbox with the input. Add the input's <code class=" language-markup">id</code> as the value
+                        of the <code class=" language-markup">for</code> attribute of the label. </p>
+                </div>
+                <div class="row">
+                    <div class="col s12 m-t-10">
+                        <h3 class="header">Default</h3>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="c-test1" checked="checked" class="default" />
+                                        <label for="c-test1">Default</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test2" class="red" />
+                                        <label for="c-test2">Red</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test3" class="yellow" />
+                                        <label for="c-test3">Yellow</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test4" class="green" />
+                                        <label for="c-test4">Green</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test5" checked disabled="disabled" />
+                                        <label for="test5">Disabled</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test6" disabled="disabled" />
+                                        <label for="test6">Disabled</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="c-test7" class="pink" />
+                                        <label for="c-test7">Pink</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test8" class="purple" />
+                                        <label for="c-test8">Purple</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test9" checked="checked" class="deep-purple" />
+                                        <label for="c-test9">Deep Purple</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test10" class="indigo" />
+                                        <label for="c-test10">Indigo</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test11" class="teal" />
+                                        <label for="test11">Teal</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#input46-html">HTML</a></li>
+                        </ul>
+                    </div>
+                    <div id="input46-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;form action=&quot;#&quot;&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test1&quot; checked=&quot;checked&quot; class=&quot;default&quot; /&gt;
+        &lt;label for=&quot;c-test1&quot;&gt;Default&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test2&quot; class=&quot;red&quot; /&gt;
+        &lt;label for=&quot;c-test2&quot;&gt;Red&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test3&quot; class=&quot;yellow&quot; /&gt;
+        &lt;label for=&quot;c-test3&quot;&gt;Yellow&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test4&quot; class=&quot;green&quot; /&gt;
+        &lt;label for=&quot;c-test4&quot;&gt;Green&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;test5&quot; checked disabled=&quot;disabled&quot; /&gt;
+        &lt;label for=&quot;test5&quot;&gt;Disabled&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;test6&quot; disabled=&quot;disabled&quot; /&gt;
+        &lt;label for=&quot;test6&quot;&gt;Disabled&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test7&quot; class=&quot;pink&quot; /&gt;
+        &lt;label for=&quot;c-test7&quot;&gt;Pink&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test8&quot; class=&quot;purple&quot; /&gt;
+        &lt;label for=&quot;c-test8&quot;&gt;Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test9&quot; checked=&quot;checked&quot; class=&quot;deep-purple&quot; /&gt;
+        &lt;label for=&quot;c-test9&quot;&gt;Deep Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test10&quot; class=&quot;indigo&quot; /&gt;
+        &lt;label for=&quot;c-test10&quot;&gt;Indigo&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;test11&quot; class=&quot;teal&quot; /&gt;
+        &lt;label for=&quot;test11&quot;&gt;Teal&lt;/label&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m-t-10">
+                        <h3 class="header">Filled In</h3>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="c-test12" checked="checked" class="filled-in default" />
+                                        <label for="c-test12">Default</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test13" class="filled-in red" />
+                                        <label for="c-test13">Red</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test14" class="filled-in yellow" />
+                                        <label for="c-test14">Yellow</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test15" class="filled-in green" />
+                                        <label for="c-test15">Green</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test16" checked disabled="disabled" class="filled-in " />
+                                        <label for="test16">Disabled</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="col s12 m6 l6">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="c-test18" class="filled-in pink" />
+                                        <label for="c-test18">Pink</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test19" class="filled-in purple" />
+                                        <label for="c-test19">Purple</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test20" checked="checked" class="filled-in deep-purple" />
+                                        <label for="c-test20">Deep Purple</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="c-test21" class="filled-in indigo" />
+                                        <label for="c-test21">Indigo</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test22" class="filled-in teal" />
+                                        <label for="test22">Teal</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m-t-20">
+                        <ul class="tabs ">
+                            <li class="tab"><a href="#input9-html">HTML</a></li>
+                        </ul>
+                    </div>
+                    <div id="input9-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;form action=&quot;#&quot;&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test12&quot; checked=&quot;checked&quot; class=&quot;filled-in default&quot; /&gt;
+        &lt;label for=&quot;c-test12&quot;&gt;Default&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test13&quot; class=&quot;filled-in red&quot; /&gt;
+        &lt;label for=&quot;c-test13&quot;&gt;Red&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test14&quot; class=&quot;filled-in yellow&quot; /&gt;
+        &lt;label for=&quot;c-test14&quot;&gt;Yellow&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test15&quot; class=&quot;filled-in green&quot; /&gt;
+        &lt;label for=&quot;c-test15&quot;&gt;Green&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;test16&quot; checked disabled=&quot;disabled&quot; class=&quot;filled-in &quot; /&gt;
+        &lt;label for=&quot;test16&quot;&gt;Disabled&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test18&quot; class=&quot;filled-in pink&quot; /&gt;
+        &lt;label for=&quot;c-test18&quot;&gt;Pink&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test19&quot; class=&quot;filled-in purple&quot; /&gt;
+        &lt;label for=&quot;c-test19&quot;&gt;Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test20&quot; checked=&quot;checked&quot; class=&quot;filled-in deep-purple&quot; /&gt;
+        &lt;label for=&quot;c-test20&quot;&gt;Deep Purple&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;c-test21&quot; class=&quot;filled-in indigo&quot; /&gt;
+        &lt;label for=&quot;c-test21&quot;&gt;Indigo&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;test22&quot; class=&quot;filled-in teal&quot; /&gt;
+        &lt;label for=&quot;test22&quot;&gt;Teal&lt;/label&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Switches</h2>
+                </div>
+                <div class="col s6 m-t-10">
+                    <div class="switch">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="default">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Default</span>
+
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="red">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Red</span>
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="yellow">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Yellow</span>
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="green ">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Green</span>
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input disabled type="checkbox">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Disabled</span>
+                    </div>
+                </div>
+
+                <div class="col s6 m-t-10">
+                    <div class="switch">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="pink">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Pink</span>
+
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="purple">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Purple</span>
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="deep-purple">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Deep Purple</span>
+                    </div>
+
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="indigo ">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Indigo</span>
+                    </div>
+                    <div class="switch m-t-20">
+                        <label>
+                        Off
+                        <input type="checkbox" checked class="teal ">
+                        <span class="lever"></span>
+                        On
+                        </label>
+                        <span class="title"> Teal</span>
+                    </div>
+                </div>
+
+                <div class="col s12 p-t-40">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input10-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input10-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;default&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Default&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;red&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Red&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;yellow&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Yellow&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;green &quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Green&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input disabled type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Disabled&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;pink&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Pink&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;purple&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Purple&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;deep-purple&quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Deep Purple&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;indigo &quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Indigo&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch&quot;&gt;
+    &lt;label&gt;
+    Off
+    &lt;input type=&quot;checkbox&quot; checked class=&quot;teal &quot;&gt;
+    &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+    On
+    &lt;/label&gt;
+    &lt;span class=&quot;title&quot;&gt; Teal&lt;/span&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">File Input</h2>
+                    <p>If you want to style an input button with a path input we provide this structure.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn default">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                    </form>
+
+                    <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn default">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input11-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input11-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+  &lt;form action="#">
+    &lt;div class="file-field input-field">
+      &lt;div class="btn default">
+        &lt;span>File&lt;/span>
+        &lt;input type="file">
+      &lt;/div>
+      &lt;div class="file-path-wrapper">
+        &lt;input class="file-path validate" type="text">
+      &lt;/div>
+    &lt;/div>
+  &lt;/form>
+
+  &lt;form action="#">
+    &lt;div class="file-field input-field">
+      &lt;div class="btn default">
+        &lt;span>File&lt;/span>
+        &lt;input type="file" multiple>
+      &lt;/div>
+      &lt;div class="file-path-wrapper">
+        &lt;input class="file-path validate" type="text" placeholder="Upload one or more files">
+      &lt;/div>
+    &lt;/div>
+  &lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">HTML5 Range</h2>
+                </div>
+                <div class="col s12 m-t-10">
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test47" min="0" max="100" />
+                        </p>
+                    </form>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input12-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="input12-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+  &lt;form action="#">
+    &lt;p class="range-field">
+      &lt;input type="range" id="test47" min="0" max="100" />
+    &lt;/p>
+  &lt;/form>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Date Picker</h2>
+                    <p>We use a modified version of pickadate.js to create a materialized date picker. Test it out below!</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <input type="date" class="datepicker">
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input13-html">HTML</a></li>
+                        <li class="tab"><a href="#input13-js">JS</a></li>
+                    </ul>
+                </div>
+                <div id="input13-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+  &lt;input type="date" class="datepicker">
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="input13-js" class="col s12">
+                    <pre>
+                        <code class="language-javascript">
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Character Counter</h2>
+                    <p>Use a character counter in fields where a character restriction is in place.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="input_text" type="text" length="10">
+                                    <label for="input_text">Input text</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea98" class="materialize-textarea" length="120"></textarea>
+                                    <label for="textarea98">Textarea</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input14-html">HTML</a></li>
+                        <li class="tab"><a href="#input14-js">JS</a></li>
+                    </ul>
+                </div>
+                <div id="input14-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+    &lt;div class="row">
+      &lt;form class="col s12">
+        &lt;div class="row">
+          &lt;div class="input-field col s6">
+            &lt;input id="input_text" type="text" length="10">
+            &lt;label for="input_text">Input text&lt;/label>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+          &lt;div class="input-field col s12">
+            &lt;textarea id="textarea98" class="materialize-textarea" length="120">&lt;/textarea>
+            &lt;label for="textarea98">Textarea&lt;/label>
+          &lt;/div>
+        &lt;/div>
+      &lt;/form>
+    &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="input14-js" class="col s12">
+                    <pre>
+                        <code class="language-javascript">
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="header">Autocomplete</h2>
+                    <p>Add an autocomplete dropdown below your input to suggest possible values.</p>
+                </div>
+                <div class="col s12 m-t-10">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">textsms</i>
+                                    <input type="text" id="autocomplete-input" class="autocomplete">
+                                    <label for="autocomplete-input">Autocomplete</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a href="#input15-html">HTML</a></li>
+                        <li class="tab"><a href="#input15-js">JS</a></li>
+                    </ul>
+                </div>
+                <div id="input15-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+  &lt;div class="row">
+    &lt;div class="col s12">
+      &lt;div class="row">
+        &lt;div class="input-field col s12">
+          &lt;i class="material-icons prefix">textsms&lt;/i>
+          &lt;input type="text" id="autocomplete-input" class="autocomplete">
+          &lt;label for="autocomplete-input">Autocomplete&lt;/label>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="input15-js" class="col s12">
+                    <pre>
+                        <code class="language-javascript">
+  $('input.autocomplete').autocomplete({
+    data: {
+      "Apple": null,
+      "Microsoft": null,
+      "Google": 'http://placehold.it/250x250'
+    }
+  });
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+        </div>
+        <!--End page body content-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+    <footer class="page-footer white" id="me-footer">
+        <div class="footer-copyright">
+            <div class="left copyright-text">
+                &copy; MaterialMe
+            </div>
+            <div class="right resources-box">
+                <ul>
+                    <li><a href="#">Terms of Ser.</a></li>
+                    <li><a href="#">SLA</a></li>
+                    <li><a href="#">Pri. &amp; terms</a></li>
+                    <li id="scroll-top-dash"><i class="material-icons">arrow_upward</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Materializecss js -->
+    <script src="../../js/materialize.min.js"></script>
+    <!--Syntax Highlighter prism js-->
+    <script src="../../plugins/prism/prism.js"></script>
+    <!-- Custom Js -->
+    <script src="../../js/init.js"></script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

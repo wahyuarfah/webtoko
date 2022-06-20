@@ -1,0 +1,421 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="themes/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#00796a">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#00796a">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00796a">
+
+    <!--Page title-->
+    <title>Shadow - MaterialMe</title>
+    <!-- CSS  -->
+
+    <!--google material design icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--materializecss css-->
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!--Syntax Highlighter prism css-->
+    <link href="../../plugins/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!--Custom css-->
+    <link href="../../css/app-style.css" type="text/css" rel="stylesheet" />
+    <!--page theme css-->
+    <link href="themes/app-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+
+    <nav id="me-navbar" class="white">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="dashboard.html" class="brand-logo">MaterialMe</a>
+            <div class="row m-l-sidbar m-b-t-no">
+                <div class="col l3 m6 s6" id="me-left-navbar">
+                    <ul class="left">
+                        <li><a href="#" data-activates="left-sidebar" class="waves-effect waves-default sidebar-collapse hide-on-large-only"><i class="material-icons">menu</i></a></li>
+                        <li id="notifications-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='notifications-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">3</span></a></li>
+                    </ul>
+                    <ul id='notifications-dropdown' class='dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 hide-on-med-and-down" id="me-desktop-search">
+                    <div class="col l12">
+                        <form class="desktop-search-box">
+                            <div class="input-field desktop-search-div">
+                                <input id="desktop-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="desktop-search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col m12 s12 hide-on-large-only" id="me-mobile-search">
+                    <div class="col m12 s12">
+                        <form class="mobile-search-box">
+                            <div class="input-field mobile-search-div">
+                                <input id="mobile-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="mobile-search"><i class="material-icons  waves-effect waves-default" id="me-hide-mobile-search">keyboard_backspace</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6" id="me-right-navbar">
+                    <ul class="right">
+                        <li class="hide-on-large-only"><a id="me-show-mobile-search" class="waves-effect waves-default"><i class="material-icons">search</i></a></li>
+                        <li id="user-account-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-pageRefresh" class="waves-effect waves-default"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-fullscreen" class="waves-effect waves-default"><i class="material-icons">fullscreen</i></a></li>
+                    </ul>
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="#!"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Left sidebar-->
+    <aside id="left-sidebar-nav">
+        <div id="left-sidebar" class="side-nav fixed">
+            <ul class="leftside-navigation">
+                <li class="navigation">Navigation</li>
+                <li><a href="dashboard.html" class="waves-effect waves-default"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">build</i><i class="material-icons right-icon right">arrow_drop_down</i>Material UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                            <li><a href="badges.html" class="waves-effect waves-default">Badges</a></li>
+                            <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                            <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                            <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                            <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                            <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                            <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                            <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                            <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                            <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+
+                    <a class="collapsible-header waves-effect waves-default active"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon right">arrow_drop_down</i>CSS</a>
+                    <div class="collapsible-body" style="display: block">
+                        <ul>
+                            <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                            <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                            <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                            <li><a href="shadow.html" class="waves-effect waves-default menu-active">Shadow</a></li>
+                            <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon right">arrow_drop_down</i>Advanced UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                            <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                            <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                            <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                            <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                            <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                            <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon right">arrow_drop_down</i>Charts</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chartjs.html" class="waves-effect waves-default">Chart JS</a></li>
+                            <li><a href="chartist.html" class="waves-effect waves-default">Chartist</a></li>
+                            <li><a href="morris-charts.html" class="waves-effect waves-default">Morris Charts</a></li>
+                            <li><a href="sparkline-charts.html" class="waves-effect waves-default">Sparkline Charts</a></li>
+                            <li><a href="NVD3-charts.html" class="waves-effect waves-default">NVD3 Charts</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">message</i><i class="material-icons right-icon right">arrow_drop_down</i>Forms</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                            <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                            <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                            <li><a href="html-form-validations.html" class="waves-effect waves-default">HTML Form Validations</a></li>
+                            <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                            <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon right">arrow_drop_down</i>Tables</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                            <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">home</i><i class="material-icons right-icon right">arrow_drop_down</i>Home</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="home/index.html" class="waves-effect waves-default">Landing Page</a></li>
+                            <li><a href="home/login.html" class="waves-effect waves-default">Login</a></li>
+                            <li><a href="home/signup.html" class="waves-effect waves-default">Signup</a></li>
+                            <li><a href="home/reset.html" class="waves-effect waves-default">Reset</a></li>
+                            <li><a href="home/lock.html" class="waves-effect waves-default">Lock</a></li>
+                            <li><a href="home/change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                            <li><a href="home/contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                            <li><a href="home/blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                            <li><a href="home/404.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="home/500.html" class="waves-effect waves-default">5oo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon right">arrow_drop_down</i>Pages</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404-dashboard.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="500-dashboard.html" class="waves-effect waves-default">5oo</a></li>
+                            <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="search.html" class="waves-effect waves-default"><i class="material-icons left-icon">search</i>Search Page</a></li>
+
+                <li><a href="grid.html" class="waves-effect waves-default"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+                <li><a href="color.html" class="waves-effect waves-default"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+                <li><a href="widgets.html" class="waves-effect waves-default"><i class="material-icons left-icon">widgets</i>widgets</a></li>
+               <li><a href="helpers.html" class="waves-effect waves-default"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+                <li><a href="docs.html" class="waves-effect waves-default"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+            </ul>
+            <div class="fixed sidebar-footer">
+                <ul>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Feedback">
+                            <i class="material-icons"> feedback </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Help">
+                            <i class="material-icons"> help </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="API">
+                            <i class="material-icons"> code </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--End left sidebar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+
+    <main>
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body title-->
+        <div class="me-page-title">
+            <!--Page Title-->
+            <h1>Shadow</h1>
+            <!--Page description-->
+            <p>In material design, everything should have a certain z-depth that determines how far raised or close to the page the element is.</p>
+            <p>You can easily apply this shadow effect by adding a class="z-depth-2" to an HTML tag.</p>
+        </div>
+
+        <!--End page body title-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body content-->
+        <div class="me-page-body">
+            <div class="row">
+                <h2 class="col s12 header">Shadow</h2>
+                <div class="col s12 m-t-10">
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-0 shadow-demo">z-depth-0</p>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-1 shadow-demo">z-depth-1</p>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-2 shadow-demo">z-depth-2</p>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-3 shadow-demo">z-depth-3</p>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-4 shadow-demo">z-depth-4</p>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <p class="z-depth-5 shadow-demo">z-depth-5</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#shadow-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="shadow-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-0">z-depth-0&lt;/p>
+&lt;/div>
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-1">z-depth-1&lt;/p>
+&lt;/div>
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-2">z-depth-2&lt;/p>
+&lt;/div>
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-3">z-depth-3&lt;/p>
+&lt;/div>
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-4">z-depth-4&lt;/p>
+&lt;/div>
+&lt;div class="col s6 m4 l2">
+    &lt;p class="z-depth-5">z-depth-5&lt;/p>
+&lt;/div>
+                                </code>
+                            </pre>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--End page body content-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+
+    <footer class="page-footer white" id="me-footer">
+        <div class="footer-copyright">
+            <div class="left copyright-text">
+                &copy; MaterialMe
+            </div>
+            <div class="right resources-box">
+                <ul>
+                    <li><a href="#">Terms of Ser.</a></li>
+                    <li><a href="#">SLA</a></li>
+                    <li><a href="#">Pri. &amp; terms</a></li>
+                    <li id="scroll-top-dash"><i class="material-icons">arrow_upward</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Materializecss js -->
+    <script src="../../js/materialize.min.js"></script>
+    <!--Syntax Highlighter prism js-->
+    <script src="../../plugins/prism/prism.js"></script>
+    <!-- Custom Js -->
+    <script src="../../js/init.js"></script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

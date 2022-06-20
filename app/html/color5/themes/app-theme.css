@@ -1,0 +1,472 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+  	1. Selection Test
+	2. Scroll bottom to Top
+	3. Prepage Loader
+2. Header / #header
+3. Content / #content
+	1. material Ui element and css
+    2. owl carousel
+	3. Form element page
+    4. Data Table page
+	5. Error Page
+	6. Widgets Page
+	
+4. Helper Class
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+#(selection,a:standard,a:active,a:hover,desktop logo background,mobile logo color,tooltip background,dropdown text color,tab indicator,tab:hover,collection:active background,pagination:active background,progress:active,Blockquote,shadow background, input:active ):#526c79
+# (prepage loader): #607d8b
+------------------------------------------------------------------------ */
+
+
+/* =================================================================================
+Body
+================================================================================= */
+
+
+/*---------------------------------
+    Selection Test
+-----------------------------------*/
+
+::-moz-selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    color: white;
+    background: #526c79;
+}
+
+::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    color: white;
+    background: #526c79;
+}
+
+
+/*---------------------------------
+    Scroll bottom to Top
+-----------------------------------*/
+
+#scroll-top .large.material-icons {
+    background: #607d8b;
+    color: #fff;
+}
+
+
+/*---------------------------------
+   Prepage Loader
+-----------------------------------*/
+
+#pre-page-loader-center-absolute .object,
+.btn.default,
+.btn-large.default,
+.support-icon .material-icons {
+    background-color: #607d8b;
+}
+
+
+/* =================================================================================
+Header
+================================================================================= */
+
+@media(min-width:993px) {
+    #me-navbar #logo-container {
+        background: #526c79;
+        color: #eeeeee;
+    }
+}
+
+@media(max-width:992px) {
+    #me-navbar #logo-container {
+        background: transparent;
+        color: #526c79;
+    }
+}
+
+
+/* =================================================================================
+Content
+================================================================================= */
+
+
+/*---------------------------------
+    material Ui element and css
+-----------------------------------*/
+
+
+/*Tooltip background color*/
+
+.backdrop {
+    background-color: #526c79;
+}
+
+
+/*Dropdown text color*/
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #526c79;
+}
+
+
+/*Tabs text color and background color*/
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    background-color: transparent;
+    color: #000;
+}
+
+.tabs .tab a {
+    color: #7c7878;
+}
+
+.tabs {
+    background: #d6d4d4
+}
+
+.tabs .indicator {
+    background-color: #526c79;
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+    color: #526c79;
+    cursor: default;
+}
+
+.tab-body-default {
+    background: #e0e0e0;
+    color: #333;
+}
+
+
+/*Breadcrumb color*/
+
+.breadcrumb:before {
+    color: #7a8e98;
+}
+
+.breadcrumb {
+    color: #526c79
+}
+
+.breadcrumb:last-child {
+    color: #000;
+}
+
+
+/*Collections*/
+
+.collection .collection-item.active {
+    background-color: #526c79;
+    color: #eeeeee;
+}
+
+.collection a.collection-item {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.secondary-content {
+    color: #526c79;
+}
+
+
+/*Pagination*/
+
+.pagination li.active {
+    background-color: #526c79;
+}
+
+
+/* Progress bar */
+
+.progress .determinate,
+.progress .indeterminate {
+    background-color: #526c79;
+}
+
+.progress {
+    background: #a2bac5;
+}
+
+
+/*Default wave*/
+
+.waves-effect.waves-default .waves-ripple {
+    background-color: #526c79;
+}
+
+
+/*Blockquote*/
+
+blockquote {
+    border-left: 5px solid #526c79;
+}
+
+
+/*Custom Shadow*/
+
+.shadow-demo {
+    background-color: #526c79;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    color: #eae5e5;
+    text-align: center;
+}
+
+
+/*html range slider*/
+
+input[type=range]+.thumb,
+input[type=range]::-webkit-slider-thumb,
+.col.grid-example {
+    background-color: #526c79;
+}
+
+
+/*---------------------------------
+   owl carousel
+-----------------------------------*/
+
+#owl-demo-box .owl-carousel .item {
+    background: #526c79;
+    color: #e9e9e9;
+}
+
+
+/*---------------------------------
+    Form element page
+-----------------------------------*/
+
+.default[type="radio"]:checked+label:after,
+[type="radio"].with-gap.default:checked+label:after,
+[type="checkbox"].filled-in.default:checked+label:after {
+    border: 2px solid #526c79 !important;
+    background-color: #526c79 !important;
+}
+
+[type="radio"].with-gap.default:checked+label:before {
+    border: 2px solid #526c79;
+}
+
+[type="checkbox"].default:checked+label:before {
+    border-right: 2px solid #526c79;
+    border-bottom: 2px solid #526c79;
+}
+
+.switch label input[type=checkbox].default:checked+.lever,
+.switch label input[type=checkbox].default:checked+.lever:after {
+    background-color: #526c79;
+}
+
+
+/* label color */
+
+
+/* label focus color */
+
+.input-field input:not([type])+focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=password]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=url]:focus+label,
+.input-field input[type=time]:focus+label,
+.input-field input[type=date]:focus+label,
+.input-field input[type=datetime]:focus+label,
+.input-field input[type=datetime-local]:focus+label,
+.input-field input[type=tel]:focus+label,
+.input-field input[type=number]:focus+label,
+.input-field input[type=search]:focus+label,
+.input-field textarea.materialize-textarea:focus+label {
+    color: #526c79;
+}
+
+
+/* label underline focus color */
+
+.input-field input:not([type])+focus,
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=url]:focus,
+.input-field input[type=time]:focus,
+.input-field input[type=date]:focus,
+.input-field input[type=datetime]:focus,
+.input-field input[type=datetime-local]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=number]:focus,
+.input-field input[type=search]:focus,
+.input-field textarea.materialize-textarea:focus,
+input:not([type])+focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=time]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+textarea.materialize-textarea:focus {
+    border-bottom: 1px solid #526c79;
+    box-shadow: 0 1px 0 0 #526c79;
+}
+
+.input-field input.box-style:not([type])+focus,
+.input-field input[type=text].box-style:focus,
+.input-field input[type=password].box-style:focus,
+.input-field input[type=email].box-style:focus,
+.input-field input[type=url].box-style:focus,
+.input-field input[type=time].box-style:focus,
+.input-field input[type=date].box-style:focus,
+.input-field input[type=datetime].box-style:focus,
+.input-field input[type=datetime-local].box-style:focus,
+.input-field input[type=tel].box-style:focus,
+.input-field input[type=number].box-style:focus,
+.input-field input[type=search].box-style:focus,
+.input-field textarea.materialize-textarea.box-style:focus,
+input.box-style:not([type])+focus,
+input[type=text].box-style:focus,
+input[type=password].box-style:focus,
+input[type=email].box-style:focus,
+input[type=url].box-style:focus,
+input[type=time].box-style:focus,
+input[type=date].box-style:focus,
+input[type=datetime].box-style:focus,
+input[type=datetime-local].box-style:focus,
+input[type=tel].box-style:focus,
+input[type=number].box-style:focus,
+input[type=search].box-style:focus,
+textarea.materialize-textarea.box-style:focus {
+    border: 1px solid #526c79;
+    box-shadow: 0 0 1px #526c79;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #526c79 !important;
+}
+
+.input-field .prefix {
+    color: #888080 !important;
+}
+
+
+/*---------------------------------
+    Data Table page
+-----------------------------------*/
+
+.dataTables_filter input[type=search]:focus {
+    border-bottom: 1px solid #526c79;
+    box-shadow: 0 1px 0 0 #526c79;
+}
+
+.dataTables_paginate .paginate_button {
+    height: 30px;
+    line-height: 10px;
+    font-size: 1.2rem;
+    border: 1px solid transparent !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #526c79 !important;
+    color: #eeeeee !important;
+    border: 1px solid #526c79;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate a.paginate_button:focus,
+.dataTables_wrapper .dataTables_paginate a.paginate_button:active {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    color: #000 !important;
+    height: 30px;
+    line-height: 10px;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    outline: none
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:active {
+    background: #526c79 !important;
+    color: #eeeeee !important;
+    border: 1px solid #526c79;
+    height: 30px;
+    line-height: 10px;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    outline: none
+}
+
+
+/*---------------------------------
+    Error Page
+-----------------------------------*/
+
+#error-banner .error-code {
+    color: #526c79 !important;
+}
+
+#error-banner .common-Link {
+    color: #526c79
+}
+
+#error-banner .common-body-text {
+    color: #6b7c93;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+
+/*---------------------------------
+Widgets Page
+-----------------------------------*/
+
+
+/*Update price plan modal*/
+
+.update-plan-title {
+    background: #526c79;
+    color: #fff;
+}
+
+
+/* =================================================================================
+helper class
+================================================================================= */
+
+.default {
+    background: #526c79 !important;
+    color: #eeeeee !important
+}
+
+.bg-default {
+    background: #526c79 !important
+}
+
+.text-default,
+.update-plan-list ul li:before,
+.update-plan-price .update-plan-value,
+p>a,
+p>a:hover {
+    color: #526c79 !important
+}

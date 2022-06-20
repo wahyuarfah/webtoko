@@ -1,0 +1,1369 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="themes/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#48352e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#48352e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#48352e">
+
+    <!--Page title-->
+    <title>Range Slider - MaterialMe</title>
+    <!-- CSS  -->
+
+    <!--google material design icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--materializecss css-->
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!--Syntax Highlighter prism css-->
+    <link href="../../plugins/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- range slider -->
+    <link href="../../plugins/rangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../../plugins/rangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <!--Custom css-->
+    <link href="../../css/app-style.css" type="text/css" rel="stylesheet" />
+    <!--page theme css-->
+    <link href="themes/app-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+
+    <nav id="me-navbar" class="white">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="dashboard.html" class="brand-logo">MaterialMe</a>
+            <div class="row m-l-sidbar m-b-t-no">
+                <div class="col l3 m6 s6" id="me-left-navbar">
+                    <ul class="left">
+                        <li><a href="#" data-activates="left-sidebar" class="waves-effect waves-default sidebar-collapse hide-on-large-only"><i class="material-icons">menu</i></a></li>
+                        <li id="notifications-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='notifications-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">3</span></a></li>
+                    </ul>
+                    <ul id='notifications-dropdown' class='dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 hide-on-med-and-down" id="me-desktop-search">
+                    <div class="col l12">
+                        <form class="desktop-search-box">
+                            <div class="input-field desktop-search-div">
+                                <input id="desktop-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="desktop-search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col m12 s12 hide-on-large-only" id="me-mobile-search">
+                    <div class="col m12 s12">
+                        <form class="mobile-search-box">
+                            <div class="input-field mobile-search-div">
+                                <input id="mobile-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="mobile-search"><i class="material-icons  waves-effect waves-default" id="me-hide-mobile-search">keyboard_backspace</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6" id="me-right-navbar">
+                    <ul class="right">
+                        <li class="hide-on-large-only"><a id="me-show-mobile-search" class="waves-effect waves-default"><i class="material-icons">search</i></a></li>
+                        <li id="user-account-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-pageRefresh" class="waves-effect waves-default"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-fullscreen" class="waves-effect waves-default"><i class="material-icons">fullscreen</i></a></li>
+                    </ul>
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="#!"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Left sidebar-->
+    <aside id="left-sidebar-nav">
+        <div id="left-sidebar" class="side-nav fixed">
+            <ul class="leftside-navigation">
+                <li class="navigation">Navigation</li>
+                <li><a href="dashboard.html" class="waves-effect waves-default"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">build</i><i class="material-icons right-icon right">arrow_drop_down</i>Material UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                            <li><a href="badges.html" class="waves-effect waves-default">Badges</a></li>
+                            <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                            <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                            <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                            <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                            <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                            <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                            <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                            <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                            <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon right">arrow_drop_down</i>CSS</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                            <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                            <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                            <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                            <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default active"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon right">arrow_drop_down</i>Advanced UI</a>
+                    <div class="collapsible-body" style="display: block">
+                        <ul>
+                            <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                            <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                            <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                            <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                            <li><a href="range-slider.html" class="waves-effect waves-default menu-active">Range Slider</a></li>
+                            <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                            <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon right">arrow_drop_down</i>Charts</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chartjs.html" class="waves-effect waves-default">Chart JS</a></li>
+                            <li><a href="chartist.html" class="waves-effect waves-default">Chartist</a></li>
+                            <li><a href="morris-charts.html" class="waves-effect waves-default">Morris Charts</a></li>
+                            <li><a href="sparkline-charts.html" class="waves-effect waves-default">Sparkline Charts</a></li>
+                            <li><a href="NVD3-charts.html" class="waves-effect waves-default">NVD3 Charts</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">message</i><i class="material-icons right-icon right">arrow_drop_down</i>Forms</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                            <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                            <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                            <li><a href="html-form-validations.html" class="waves-effect waves-default">HTML Form Validations</a></li>
+                            <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                            <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon right">arrow_drop_down</i>Tables</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                            <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">home</i><i class="material-icons right-icon right">arrow_drop_down</i>Home</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="home/index.html" class="waves-effect waves-default">Landing Page</a></li>
+                            <li><a href="home/login.html" class="waves-effect waves-default">Login</a></li>
+                            <li><a href="home/signup.html" class="waves-effect waves-default">Signup</a></li>
+                            <li><a href="home/reset.html" class="waves-effect waves-default">Reset</a></li>
+                            <li><a href="home/lock.html" class="waves-effect waves-default">Lock</a></li>
+                            <li><a href="home/change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                            <li><a href="home/contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                            <li><a href="home/blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                            <li><a href="home/404.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="home/500.html" class="waves-effect waves-default">5oo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon right">arrow_drop_down</i>Pages</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404-dashboard.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="500-dashboard.html" class="waves-effect waves-default">5oo</a></li>
+                            <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="search.html" class="waves-effect waves-default"><i class="material-icons left-icon">search</i>Search Page</a></li>
+
+                <li><a href="grid.html" class="waves-effect waves-default"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+                <li><a href="color.html" class="waves-effect waves-default"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+                <li><a href="widgets.html" class="waves-effect waves-default"><i class="material-icons left-icon">widgets</i>widgets</a></li>
+               <li><a href="helpers.html" class="waves-effect waves-default"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+                <li><a href="docs.html" class="waves-effect waves-default"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+            </ul>
+            <div class="fixed sidebar-footer">
+                <ul>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Feedback">
+                            <i class="material-icons"> feedback </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Help">
+                            <i class="material-icons"> help </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="API">
+                            <i class="material-icons"> code </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--End left sidebar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+
+    <main>
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body title-->
+        <div class="me-page-title">
+            <!--Page Title-->
+            <h1>Range Slider</h1>
+            <!--Page description-->
+            <p><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">ion.RangeSlider</a> is Easy, flexible and responsive range slider with skin support.</p>
+        </div>
+
+        <!--End page body title-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body content-->
+        <div class="me-page-body">
+            <div class="row">
+                <h2 class="col s12 header">Basic</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Start without params</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_01" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_01"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_01").ionRangeSlider();
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Set min value, max value and start point</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_02" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic2-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic2-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic2-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_02"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic2-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_02").ionRangeSlider({
+    min: 100,
+    max: 1000,
+    from: 550
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Set type to double and specify range, also showing grid and adding prefix "$"</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_03" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic3-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic3-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic3-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_03"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic3-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_03").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 800,
+    prefix: "$"
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Set up range and step</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Set up range with negative values</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_04" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic4-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic4-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic4-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_04"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic4-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_04").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: -1000,
+    max: 1000,
+    from: -500,
+    to: 500
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Using step 250</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_05" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic5-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic5-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic5-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_05"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic5-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_05").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: -1000,
+    max: 1000,
+    from: -500,
+    to: 500,
+    step: 250
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Set up range with fractional values, using fractional step</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_06" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic6-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic6-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic6-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_06"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic6-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_06").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: -12.8,
+    max: 12.8,
+    from: -3.2,
+    to: 3.2,
+    step: 0.1
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Using custom values array</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Start without params</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_07" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic7-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic7-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic7-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_07"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic7-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_07").ionRangeSlider({
+    type: "double",
+    grid: true,
+    from: 1,
+    to: 5,
+    values: [0, 10, 100, 1000, 10000, 100000, 1000000]
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Using any strings as your values</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_08" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic8-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic8-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic8-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_08"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic8-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_08").ionRangeSlider({
+    grid: true,
+    from: 5,
+    values: [
+        "zero", "one",
+        "two", "three",
+        "four", "five",
+        "six", "seven",
+        "eight", "nine",
+        "ten"
+    ]
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">One more example with strings</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_09" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic9-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic9-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic9-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_09"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic9-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_09").ionRangeSlider({
+    grid: true,
+    from: 3,
+    values: [
+        "January", "February", "March",
+        "April", "May", "June",
+        "July", "August", "September",
+        "October", "November", "December"
+    ]
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Prettify visual look of numbers</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">No prettify. Big numbers are ugly and unreadable</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_10" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic10-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic10-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic10-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_10"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic10-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_10").ionRangeSlider({
+    grid: true,
+    min: 1000,
+    max: 1000000,
+    from: 100000,
+    step: 1000,
+    prettify_enabled: false
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Prettify enabled. Much better!</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_11" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic11-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic11-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic11-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_11"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic11-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_11").ionRangeSlider({
+    grid: true,
+    min: 1000,
+    max: 1000000,
+    from: 200000,
+    step: 1000,
+    prettify_enabled: true
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">You don't like default prettify function? Use your own!</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_13" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic13-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic13-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic13-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_13"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic13-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_13").ionRangeSlider({
+    grid: true,
+    min: 1000,
+    max: 1000000,
+    from: 400000,
+    step: 1000,
+    prettify_enabled: true,
+    prettify: function (num) {
+        return (Math.random() * num).toFixed(0);
+    }
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Decorating numbers</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Using prefixes</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_14" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic14-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic14-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic14-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_14"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic14-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_14").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 800,
+    prefix: "$"
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Using postfixes</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_15" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic15-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic15-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic15-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_15"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic15-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_15").ionRangeSlider({
+    type: "single",
+    grid: true,
+    min: -90,
+    max: 90,
+    from: 0,
+    postfix: "°"
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Whant to show that max number is not the biggest one?</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_16" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic16-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic16-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic16-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_16"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic16-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_16").ionRangeSlider({
+    grid: true,
+    min: 18,
+    max: 70,
+    from: 30,
+    prefix: "Age ",
+    max_postfix: "+"
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Taking care about how from and to values connect? Use decorate_both option:</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_17" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic17-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic17-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic17-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_17"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic17-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_17").ionRangeSlider({
+    type: "double",
+    min: 100,
+    max: 200,
+    from: 145,
+    to: 155,
+    prefix: "Weight: ",
+    postfix: " million pounds",
+    decorate_both: true
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Visual details</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">You can disable all the sliders visual details, if you wish. Like this:</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_21" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic21-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic21-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic21-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_21"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic21-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_21").ionRangeSlider({
+    type: "double",
+    min: 1000,
+    max: 2000,
+    from: 1200,
+    to: 1800,
+    hide_min_max: true,
+    hide_from_to: true,
+    grid: false
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3 class="header">Or hide any part you wish</h3>
+                        <div class="col s12 l9 m-t-20">
+                            <input id="range_22" />
+                        </div>
+                        <div class="col s12 l9 p-t-40">
+                            <input id="range_23" />
+                        </div>
+                        <div class="col s12 l9 p-t-40">
+                            <input id="range_24" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 p-t-40">
+                        <ul class="tabs">
+                            <li class="tab"><a href="#slider-basic22-html">HTML</a></li>
+                            <li class="tab"><a class="active" href="#slider-basic22-js">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="slider-basic22-html" class="col s12">
+                        <pre>
+                        <code class="language-html">
+&lt;input id="range_22"/>
+&lt;input id="range_23"/>
+&lt;input id="range_24"/>
+                        </code>
+                    </pre>
+
+                    </div>
+
+                    <div id="slider-basic22-js" class="col s12">
+                        <pre>
+                        <code class="language-javascript">
+$("#range_22").ionRangeSlider({
+    type: "double",
+    min: 1000,
+    max: 2000,
+    from: 1200,
+    to: 1800,
+    hide_min_max: true,
+    hide_from_to: true,
+    grid: true
+});
+
+$("#range_23").ionRangeSlider({
+    type: "double",
+    min: 1000,
+    max: 2000,
+    from: 1200,
+    to: 1800,
+    hide_min_max: false,
+    hide_from_to: true,
+    grid: false
+});
+
+$("#range_24").ionRangeSlider({
+    type: "double",
+    min: 1000,
+    max: 2000,
+    from: 1200,
+    to: 1800,
+    hide_min_max: true,
+    hide_from_to: false,
+    grid: false
+});
+                        </code>
+                    </pre>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <!--End page body content-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+
+    <footer class="page-footer white" id="me-footer">
+        <div class="footer-copyright">
+            <div class="left copyright-text">
+                &copy; MaterialMe
+            </div>
+            <div class="right resources-box">
+                <ul>
+                    <li><a href="#">Terms of Ser.</a></li>
+                    <li><a href="#">SLA</a></li>
+                    <li><a href="#">Pri. &amp; terms</a></li>
+                    <li id="scroll-top-dash"><i class="material-icons">arrow_upward</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Materializecss js -->
+    <script src="../../js/materialize.min.js"></script>
+    <!--Syntax Highlighter prism js-->
+    <script src="../../plugins/prism/prism.js"></script>
+    <!-- range slider -->
+    <script type="text/javascript" src="../../plugins/rangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../../js/init.js"></script>
+    <!--range slider example-->
+    <script>
+        $("#range_01").ionRangeSlider();
+        $("#range_02").ionRangeSlider({
+            min: 100,
+            max: 1000,
+            from: 550
+        });
+
+        $("#range_03").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: 0,
+            max: 1000,
+            from: 200,
+            to: 800,
+            prefix: "$"
+        });
+
+        $("#range_04").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: -1000,
+            max: 1000,
+            from: -500,
+            to: 500
+        });
+
+        $("#range_05").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: -1000,
+            max: 1000,
+            from: -500,
+            to: 500,
+            step: 250
+        });
+
+        $("#range_06").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: -12.8,
+            max: 12.8,
+            from: -3.2,
+            to: 3.2,
+            step: 0.1
+        });
+
+        $("#range_07").ionRangeSlider({
+            type: "double",
+            grid: true,
+            from: 1,
+            to: 5,
+            values: [0, 10, 100, 1000, 10000, 100000, 1000000]
+        });
+
+        $("#range_08").ionRangeSlider({
+            grid: true,
+            from: 5,
+            values: [
+                "zero", "one",
+                "two", "three",
+                "four", "five",
+                "six", "seven",
+                "eight", "nine",
+                "ten"
+            ]
+        });
+
+
+        $("#range_09").ionRangeSlider({
+            grid: true,
+            from: 3,
+            values: [
+                "January", "February", "March",
+                "April", "May", "June",
+                "July", "August", "September",
+                "October", "November", "December"
+            ]
+        });
+
+        $("#range_10").ionRangeSlider({
+            grid: true,
+            min: 1000,
+            max: 1000000,
+            from: 100000,
+            step: 1000,
+            prettify_enabled: false
+        });
+
+        $("#range_11").ionRangeSlider({
+            grid: true,
+            min: 1000,
+            max: 1000000,
+            from: 200000,
+            step: 1000,
+            prettify_enabled: true
+        });
+
+        $("#range_13").ionRangeSlider({
+            grid: true,
+            min: 1000,
+            max: 1000000,
+            from: 400000,
+            step: 1000,
+            prettify_enabled: true,
+            prettify: function(num) {
+                return (Math.random() * num).toFixed(0);
+            }
+        });
+
+
+        $("#range_14").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: 0,
+            max: 1000,
+            from: 200,
+            to: 800,
+            prefix: "$"
+        });
+
+        $("#range_15").ionRangeSlider({
+            type: "single",
+            grid: true,
+            min: -90,
+            max: 90,
+            from: 0,
+            postfix: "°"
+        });
+
+        $("#range_16").ionRangeSlider({
+            grid: true,
+            min: 18,
+            max: 70,
+            from: 30,
+            prefix: "Age ",
+            max_postfix: "+"
+        });
+
+        $("#range_17").ionRangeSlider({
+            type: "double",
+            min: 100,
+            max: 200,
+            from: 145,
+            to: 155,
+            prefix: "Weight: ",
+            postfix: " million pounds",
+            decorate_both: true
+        });
+
+        $("#range_21").ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 2000,
+            from: 1200,
+            to: 1800,
+            hide_min_max: true,
+            hide_from_to: true,
+            grid: false
+        });
+
+        $("#range_22").ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 2000,
+            from: 1200,
+            to: 1800,
+            hide_min_max: true,
+            hide_from_to: true,
+            grid: true
+        });
+
+        $("#range_23").ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 2000,
+            from: 1200,
+            to: 1800,
+            hide_min_max: false,
+            hide_from_to: true,
+            grid: false
+        });
+
+        $("#range_24").ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 2000,
+            from: 1200,
+            to: 1800,
+            hide_min_max: true,
+            hide_from_to: false,
+            grid: false
+        });
+    </script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

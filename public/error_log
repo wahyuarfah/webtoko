@@ -1,0 +1,1 @@
+[17-Nov-2021 01:56:17 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/englishchalleng/public_html/batikbanesa.github.io/app/config.php on line 7

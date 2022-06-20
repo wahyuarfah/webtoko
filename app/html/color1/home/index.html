@@ -1,0 +1,672 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Favicon icon-->
+    <link href="theme/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#1a54de">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1a54de">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1a54de">
+
+    <!--Page title-->
+    <title>Home - MaterialMe</title>
+
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <!-- materialize CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../../home/css/materialize.css" type="text/css" rel="stylesheet" />
+    <!--owlcarousel2-->
+    <link href="../../../home/plugins/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../../../home/plugins/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <!--app css-->
+    <link href="../../../home/css/app-style.css" type="text/css" rel="stylesheet" />
+    <link href="theme/app-theme.css" type="text/css" rel="stylesheet" />
+
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <!--Page Loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!--Scroll Top-->
+    <div class="fixed-action-btn" id="scroll-top" style="display:none">
+        <a class="btn-floating btn-large">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+    </div>
+    <!-- ./Scroll Top-->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">MaterialMe</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="nav-login" href="login.html">Login</a></li>
+                <li><a class="nav-trial" href="signup.html">Free Trial</a></li>
+            </ul>
+            <ul class="float-center hide-on-med-and-down">
+                <li><a href="#" class="dropdown-button" data-activates='products-dropdown'>Products</a></li>
+                <li><a href="#" class="dropdown-button" data-activates='developer-dropdown'>Developers</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+
+            <!-- Product Dropdown Structure -->
+            <ul id='products-dropdown' class='dropdown-content'>
+                <li><a href="#!"><i class="material-icons indigo-text text-lighten-3">hourglass_full</i> Consectetur</a></li>
+                <li><a href="#!"><i class="green-text text-lighten-3 material-icons">input</i> Vulputate</a></li>
+                <li><a href="#!"><i class="cyan-text text-lighten-3 material-icons">lightbulb_outline</i> Adipiscing</a></li>
+                <li><a href="#!"><i class="teal-text text-lighten-3 material-icons">language</i> Dolor</a></li>
+                <li><a href="#!"><i class="purple-text text-lighten-3 material-icons">invert_colors</i> Tristique</a></li>
+            </ul>
+            <!-- Developer Dropdown Structure -->
+            <ul id='developer-dropdown' class='dropdown-content'>
+                <li><a href="#!"><i class="red-text text-lighten-3 material-icons">code</i> JS API</a></li>
+                <li><a href="#!"><i class="pink-text text-lighten-3 material-icons">queue_play_next</i> Rest API</a></li>
+                <li><a href="#!"><i class="deep-orange-text text-lighten-3 material-icons">redeem</i> Blog</a></li>
+                <li><a href="#!"><i class="amber-text text-lighten-3 material-icons">question_answer</i> FAQ</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li class="mobile-home"><a href="#"><i class="material-icons">home</i>Home<span class="mobile-logo">M</span></a></li>
+                <li><a class="waves-effect waves-default" href="#"><i class="material-icons">account_circle</i>Login</a></li>
+                <li><a class="waves-effect waves-default" href="#"><i class="material-icons">assignment_ind</i>Free Trial</a></li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">list</i><i class="material-icons right-icon right roated">arrow_drop_down</i>Products</a>
+                            <div class="collapsible-body no-padding">
+                                <ul>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="material-icons indigo-text text-lighten-3">hourglass_full</i> Consectetur</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="green-text text-lighten-3 material-icons">input</i> Vulputate</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="cyan-text text-lighten-3 material-icons">lightbulb_outline</i> Adipiscing</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="teal-text text-lighten-3 material-icons">language</i> Dolor</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="purple-text text-lighten-3 material-icons">invert_colors</i> Tristique</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">developer_board</i><i class="material-icons right-icon right roated">arrow_drop_down</i>Developers</a>
+                            <div class="collapsible-body no-padding">
+                                <ul>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="material-icons red-text text-lighten-3">code</i> JS API</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="pink-text text-lighten-3 material-icons">queue_play_next</i> Rest API</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="deep-text text-lighten-3 material-icons">redeem</i> Blog</a></li>
+                                    <li><a href="#" class="waves-effect waves-default"><i class="amber-text text-lighten-3 material-icons">question_answer</i> FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a class="waves-effect waves-default" href="#"><i class="material-icons">attach_money</i>Pricing</a></li>
+
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse mobile-menu"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+    <main class="home-page">
+        <div id="intro-banner">
+            <div class="section container">
+                <div class="row">
+                    <div class="col s12" id="home-index-banner">
+                        <h1 class="header center">MaterialMe Template</h1>
+                        <div class="row">
+                            <p class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet orci sed mi hendrerit auctor id eu quam. Donec sed pretium libero.</p>
+                        </div>
+                        <div class="row center">
+                            <a href="#" id="more-info-btn" class="btn waves-effect waves-light">more info</a>
+                            <a href="signup.html" id="free-trial-btn" class="btn waves-effect waves-light">free trial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="feature-banner">
+            <div class="section container">
+                <h2 class="header center">Excellent <span class="text-default">Features</span></h2>
+                <div class="row m-m-b-no">
+                    <div class="col s12 m4 feature-box">
+                        <div class="center feature-icon"><i class="material-icons">find_replace</i></div>
+                        <div class="feature-content">
+                            <h5>Intuitive Design</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 feature-box feature-border">
+                        <div class="center feature-icon"><i class="material-icons">devices_other</i></div>
+                        <div class="feature-content">
+                            <h5>Pre-made Themes</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 feature-box">
+                        <div class="center feature-icon"><i class="material-icons">battery_charging_full</i></div>
+                        <div class="feature-content">
+                            <h5>Battery Friendly</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row d-m-t-20">
+                    <div class="col s12 m4 feature-box">
+                        <div class="center feature-icon"><i class="material-icons">settings_overscan</i></div>
+                        <div class="feature-content">
+                            <h5>Responsive Media</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 feature-box feature-border">
+                        <div class="center feature-icon"><i class="material-icons">format_color_fill</i></div>
+                        <div class="feature-content">
+                            <h5>Color Options</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 feature-box">
+                        <div class="center feature-icon"><i class="material-icons">settings_voice</i></div>
+                        <div class="feature-content">
+                            <h5>Voice Supported</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col s12 center">
+                        <a href="#" class="btn default waves-effect waves-light">Explore Feature</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="support-banner">
+            <div class="section container">
+                <h2 class="header center">Impeccable <span class="text-default">Support</span></h2>
+                <div class="row">
+                    <div class="col s12 m4 support-box center">
+                        <div class="support-icon"><i class="material-icons">mail</i></div>
+                        <div class="support-content">
+                            <p>Write to Us</p>
+                            <span class="support-info"><a href="mailto:support@mail.com" title="Email">support@mail.com</a></span>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4 support-box center">
+                        <div class="support-icon"><i class="material-icons">speaker_phone</i></div>
+                        <div class="support-content">
+                            <p>Connect with Us</p>
+                            <span class="support-info">+91 56566555555</span>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4 support-box center">
+                        <div class="support-icon"><i class="material-icons">chat</i></div>
+                        <div class="support-content">
+                            <p>Chat with Us</p>
+                            <span class="support-info"><a href="mailto:support@mail.com" title="Email">@Skype</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="customer-banner">
+            <div class="section container">
+                <h2 class="header center">Our <span class="text-default">Customers</span></h2>
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="customers-carousel">
+                        <div class="item">
+                            <img src="../../../home/img/1.png" alt="brand-image1">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/2.png" alt="brand-image2">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/3.png" alt="brand-image3">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/1.png" alt="brand-image4">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/2.png" alt="brand-image5">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/3.png" alt="brand-image6">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/1.png" alt="brand-image7">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/2.png" alt="brand-image8">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/3.png" alt="brand-image9">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/1.png" alt="brand-image10">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/2.png" alt="brand-image11">
+                        </div>
+                        <div class="item">
+                            <img src="../../../home/img/3.png" alt="brand-image12">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pricing-banner">
+            <div class="section container">
+                <h2 class="header center">Affordable <span class="text-default">Pricing</span></h2>
+                <div class="row">
+                    <div class="col s12 m12 l4 pricing-box">
+                        <div class="pricing-header">
+                            <h5>PRO</h5>
+                            <p class="plan-value"><span class="doller">$</span>29</p>
+                            <span class="plan-format">PER MONTH</span>
+                            <a class="btn-large default" href="#">Buy Now</a>
+
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><span>Material Design Icons</span>
+                                </li>
+                                <li><span>Modals</span>
+                                </li>
+                                <li><span> Responsive Menu</span>
+                                </li>
+                                <li><span>Custom Tables</span>
+                                </li>
+                                <li><span>Form Validations</span>
+                                </li>
+                                <li><span>Right Sidebar</span>
+                                </li>
+                                <li><span>Easy to Customize</span>
+                                </li>
+                                <li><span>Documentation included</span>
+                                </li>
+                                <li><span>Custom Forms</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12 l4 pricing-box">
+                        <div class="pricing-header">
+                            <h5>BUSINESS</h5>
+                            <p class="plan-value"><span class="doller">$</span>99</p>
+                            <span class="plan-format">PER MONTH</span>
+                            <a class="btn-large default" href="#">Buy Now</a>
+
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><span>Material Design Icons</span>
+                                </li>
+                                <li><span>Modals</span>
+                                </li>
+                                <li><span> Responsive Menu</span>
+                                </li>
+                                <li><span>Custom Tables</span>
+                                </li>
+                                <li><span>Form Validations</span>
+                                </li>
+                                <li><span>Right Sidebar</span>
+                                </li>
+                                <li><span>Easy to Customize</span>
+                                </li>
+                                <li><span>Documentation included</span>
+                                </li>
+                                <li><span>Custom Forms</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m12 l4 pricing-box">
+                        <div class="pricing-header">
+                            <h5>ENTERPRISE</h5>
+                            <p class="plan-value contactus">Contact Us</p>
+                            <span class="plan-format"></span>
+                            <a class="btn-large default" href="#">EMAIL US</a>
+
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><span>Material Design Icons</span>
+                                </li>
+                                <li><span>Modals</span>
+                                </li>
+                                <li><span> Responsive Menu</span>
+                                </li>
+                                <li><span>Custom Tables</span>
+                                </li>
+                                <li><span>Form Validations</span>
+                                </li>
+                                <li><span>Right Sidebar</span>
+                                </li>
+                                <li><span>Easy to Customize</span>
+                                </li>
+                                <li><span>Documentation included</span>
+                                </li>
+                                <li><span>Custom Forms</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq-banner">
+            <div class="section container">
+                <h2 class="header center">Helpful <span class="text-default">FAQ</span></h2>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">remove</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body active">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">add</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">add</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 l6">
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">remove</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body active">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">add</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col s12">
+                                    <div class="card faq-card">
+                                        <div class="card-content">
+                                            <span class="card-title"><i class="material-icons">add</i>Lorem ipsum dolor sit amet? </span>
+                                            <div class="card-body">
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonial-banner">
+            <div class="section container">
+                <h2 class="header center">User <span class="text-default">Testimonials</span></h2>
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="testimonial-carousel">
+                        <div>
+                            <img class="feedback-avatar" src="../../../home/img/materializecss.png" alt="john doe img">
+                            <h4 class="h3-feedback">John Doe</h4>
+                            <div class="feedback-avatar-description">Senior Software Engineer, Patent Navigation</div>
+                            <div class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</div>
+                        </div>
+                        <div>
+                            <img class="feedback-avatar" src="../../../home/img/responsive.jpg" alt="john doe1 img">
+                            <h4 class="h3-feedback">John Doe1</h4>
+                            <div class="feedback-avatar-description">Senior Software Engineer, Patent Navigation</div>
+                            <div class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</div>
+                        </div>
+                        <div>
+                            <img class="feedback-avatar" src="../../../home/img/yuna.jpg" alt="john doe2 img">
+                            <h4 class="h3-feedback">John Doe2</h4>
+                            <div class="feedback-avatar-description">Senior Software Engineer, Patent Navigation</div>
+                            <div class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 m12 s12 t-m-b-30">
+                    <h5 class="footer-header">Company Bio</h5>
+                    <p class="company-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique.</p>
+                </div>
+                <div class="col l2 m3 s6">
+                    <h5 class="footer-header">PRODUCTS</h5>
+                    <ul>
+                        <li><a href="#!">Pricing</a></li>
+                        <li><a href="#!">ipsum</a></li>
+                        <li><a href="#!">Global</a></li>
+                        <li><a href="#!">tristique</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 m3 s6">
+                    <h5 class="footer-header">DEVELOPERS</h5>
+                    <ul>
+                        <li><a href="#!">Documentation</a></li>
+                        <li><a href="#!">API reference</a></li>
+                        <li><a href="#!">API status</a></li>
+                        <li><a href="#!">Open source</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 m3 s6">
+                    <h5 class="footer-header">COMPANY</h5>
+                    <ul>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Customers</a></li>
+                        <li><a href="#!">Jobs</a></li>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 m3 s6">
+                    <h5 class="footer-header">RESOURCES</h5>
+                    <ul>
+                        <li><a href="#!">Support</a></li>
+                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#!">Privacy &amp; terms</a></li>
+                    </ul>
+                </div>
+                <div class="col s12">
+                    <p class="copyright">&copy; MaterialMe</p>
+                    <div class="right share-social-box">
+                        <a href="#"><img src="../../../home/img/share/facebook.png" alt="facebook shareicon" title="share on facebook" /></a>
+                        <a href="#"><img src="../../../home/img/share/google-plus.png" alt="google plus share icon" title="share on google plus" /></a>
+                        <a href="#"><img src="../../../home/img/share/twitter.png" alt="twitter share icon" title="share on twitter" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!--  Scripts-->
+    <script src="../../../home/js/jquery.min.js"></script>
+    <script src="../../../home/js/materialize.js"></script>
+    <script src="../../../home/js/jquery.gradientify.min.js"></script>
+    <!--owlcarousel2-->
+    <script src="../../../home/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../../../home/js/init.js"></script>
+
+    <!--Page script-->
+    <script type="text/javascript">
+        //  owlcarousel2 slider testmonials
+        $('#testimonial-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false
+        });
+        //  owlcarousel2 slider customers
+        var owl = $('#customers-carousel');
+        owl.owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            },
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*background ingradient even section*/
+            $("#feature-banner,#customer-banner,#faq-banner").gradientify({
+                gradients: [{
+                    start: [246, 246, 246],
+                    stop: [237, 238, 240]
+                }, {
+                    start: [237, 238, 240],
+                    stop: [247, 248, 249]
+                }, {
+                    start: [247, 248, 249],
+                    stop: [246, 246, 246]
+                }]
+            });
+
+            /*background ingradient odd section*/
+            $("nav,#intro-banner,#support-banner,#pricing-banner,#testimonial-banner").gradientify({
+                gradients: [{
+                    start: [237, 238, 240],
+                    stop: [246, 246, 246]
+                }, {
+                    start: [246, 246, 246],
+                    stop: [228, 228, 228]
+                }, {
+                    start: [228, 228, 228],
+                    stop: [246, 246, 246]
+                }]
+            });
+        });
+    </script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

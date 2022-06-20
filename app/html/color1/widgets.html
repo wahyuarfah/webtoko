@@ -1,0 +1,835 @@
+<!--Design by MaterialMe-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="themes/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#1a54de">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1a54de">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1a54de">
+
+    <!--Page title-->
+    <title>Widgets - MaterialMe</title>
+    <!-- CSS  -->
+
+    <!--google material design icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--materializecss css-->
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!--Syntax Highlighter prism css-->
+    <link href="../../plugins/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!--Custom css-->
+    <link href="../../css/app-style.css" type="text/css" rel="stylesheet" />
+    <!--page theme css-->
+    <link href="themes/app-theme.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- pre page loader-->
+    <div id="pre-page-loader">
+        <div id="pre-page-loader-center">
+            <div id="pre-page-loader-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+        </div>
+    </div>
+    <!--End pre page loader-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Navbar-->
+
+    <nav id="me-navbar" class="white">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="dashboard.html" class="brand-logo">MaterialMe</a>
+            <div class="row m-l-sidbar m-b-t-no">
+                <div class="col l3 m6 s6" id="me-left-navbar">
+                    <ul class="left">
+                        <li><a href="#" data-activates="left-sidebar" class="waves-effect waves-default sidebar-collapse hide-on-large-only"><i class="material-icons">menu</i></a></li>
+                        <li id="notifications-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='notifications-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">3</span></a></li>
+                    </ul>
+                    <ul id='notifications-dropdown' class='dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l6 hide-on-med-and-down" id="me-desktop-search">
+                    <div class="col l12">
+                        <form class="desktop-search-box">
+                            <div class="input-field desktop-search-div">
+                                <input id="desktop-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="desktop-search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col m12 s12 hide-on-large-only" id="me-mobile-search">
+                    <div class="col m12 s12">
+                        <form class="mobile-search-box">
+                            <div class="input-field mobile-search-div">
+                                <input id="mobile-search" type="search" placeholder="Search What You Want?" required>
+                                <label for="mobile-search"><i class="material-icons  waves-effect waves-default" id="me-hide-mobile-search">keyboard_backspace</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6" id="me-right-navbar">
+                    <ul class="right">
+                        <li class="hide-on-large-only"><a id="me-show-mobile-search" class="waves-effect waves-default"><i class="material-icons">search</i></a></li>
+                        <li id="user-account-box"><a class='dropdown-button waves-effect waves-default' href='#' data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-pageRefresh" class="waves-effect waves-default"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-small-only"><a id="me-fullscreen" class="waves-effect waves-default"><i class="material-icons">fullscreen</i></a></li>
+                    </ul>
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="#!"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Left sidebar-->
+    <aside id="left-sidebar-nav">
+        <div id="left-sidebar" class="side-nav fixed">
+            <ul class="leftside-navigation">
+                <li class="navigation">Navigation</li>
+                <li><a href="dashboard.html" class="waves-effect waves-default"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">build</i><i class="material-icons right-icon right">arrow_drop_down</i>Material UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                            <li><a href="badges.html" class="waves-effect waves-default">Badges</a></li>
+                            <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                            <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                            <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                            <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                            <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                            <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                            <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                            <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                            <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon right">arrow_drop_down</i>CSS</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                            <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                            <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                            <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                            <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon right">arrow_drop_down</i>Advanced UI</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                            <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                            <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                            <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                            <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                            <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                            <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon right">arrow_drop_down</i>Charts</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="chartjs.html" class="waves-effect waves-default">Chart JS</a></li>
+                            <li><a href="chartist.html" class="waves-effect waves-default">Chartist</a></li>
+                            <li><a href="morris-charts.html" class="waves-effect waves-default">Morris Charts</a></li>
+                            <li><a href="sparkline-charts.html" class="waves-effect waves-default">Sparkline Charts</a></li>
+                            <li><a href="NVD3-charts.html" class="waves-effect waves-default">NVD3 Charts</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">message</i><i class="material-icons right-icon right">arrow_drop_down</i>Forms</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                            <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                            <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                            <li><a href="html-form-validations.html" class="waves-effect waves-default">HTML Form Validations</a></li>
+                            <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                            <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon right">arrow_drop_down</i>Tables</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                            <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">home</i><i class="material-icons right-icon right">arrow_drop_down</i>Home</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="home/index.html" class="waves-effect waves-default">Landing Page</a></li>
+                            <li><a href="home/login.html" class="waves-effect waves-default">Login</a></li>
+                            <li><a href="home/signup.html" class="waves-effect waves-default">Signup</a></li>
+                            <li><a href="home/reset.html" class="waves-effect waves-default">Reset</a></li>
+                            <li><a href="home/lock.html" class="waves-effect waves-default">Lock</a></li>
+                            <li><a href="home/change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                            <li><a href="home/contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                            <li><a href="home/blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                            <li><a href="home/404.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="home/500.html" class="waves-effect waves-default">5oo</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="collapsible-header waves-effect waves-default"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon right">arrow_drop_down</i>Pages</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404-dashboard.html" class="waves-effect waves-default">404</a></li>
+                            <li><a href="500-dashboard.html" class="waves-effect waves-default">5oo</a></li>
+                            <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="search.html" class="waves-effect waves-default"><i class="material-icons left-icon">search</i>Search Page</a></li>
+
+                <li><a href="grid.html" class="waves-effect waves-default"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+                <li><a href="color.html" class="waves-effect waves-default"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+                <li><a href="widgets.html" class="waves-effect waves-default active"><i class="material-icons left-icon">widgets</i>widgets</a></li>
+               <li><a href="helpers.html" class="waves-effect waves-default"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+                <li><a href="docs.html" class="waves-effect waves-default"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+            </ul>
+            <div class="fixed sidebar-footer">
+                <ul>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Feedback">
+                            <i class="material-icons"> feedback </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="Help">
+                            <i class="material-icons"> help </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltipped" data-delay="0" data-position="top" data-tooltip="API">
+                            <i class="material-icons"> code </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--End left sidebar-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page Body-->
+
+    <main>
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body title-->
+        <div class="me-page-title">
+            <!--Page Title-->
+            <h1>Widgets</h1>
+            <!--Page description-->
+            <p>Customize your theme with awesome widgets.</p>
+        </div>
+
+        <!--End page body title-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Page body content-->
+        <div class="me-page-body">
+            <div class="row">
+                <h2 class="col s12 header">Feedback Model Form</h2>
+                <div class="col s12 m-t-10">
+                    <!-- Feedback Modal Trigger -->
+                    <a class="waves-effect waves-light btn default" href="#feedback-modal"><i class="material-icons left">feedback</i>Feedback</a>
+
+                    <!-- Feedback Modal Structure -->
+                    <div id="feedback-modal" class="modal small info-model-form">
+                        <div class="modal-content">
+                            <div class="info-form-title">
+                                <h4>Drop us a Line</h4>
+                                <i class="material-icons right me-close modal-close waves-effect waves-red">clear</i>
+                            </div>
+                            <div class="info-form-body">
+                                <form>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="name" type="text">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">message</i>
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                    <div class="input-field col s12 center">
+                                        <button type="submit" class="btn default contact-us-button">Contact US</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#widgets1-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="widgets1-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;!-- Feedback Modal Trigger --&gt;
+&lt;a class=&quot;waves-effect waves-light btn default&quot; href=&quot;#feedback-modal&quot;&gt;&lt;i class=&quot;material-icons left&quot;&gt;feedback&lt;/i&gt;Feedback&lt;/a&gt;
+
+&lt;!-- Feedback Modal Structure --&gt;
+&lt;div id=&quot;feedback-modal&quot; class=&quot;modal small info-model-form&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;info-form-title&quot;&gt;
+            &lt;h4&gt;Drop us a Line&lt;/h4&gt;
+            &lt;i class=&quot;material-icons right me-close modal-close waves-effect waves-red&quot;&gt;clear&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;info-form-body&quot;&gt;
+            &lt;form&gt;
+                &lt;div class=&quot;input-field col s12&quot;&gt;
+                    &lt;i class=&quot;material-icons prefix&quot;&gt;account_circle&lt;/i&gt;
+                    &lt;input id=&quot;name&quot; type=&quot;text&quot;&gt;
+                    &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;input-field col s12&quot;&gt;
+                    &lt;i class=&quot;material-icons prefix&quot;&gt;mail&lt;/i&gt;
+                    &lt;input id=&quot;email&quot; type=&quot;email&quot;&gt;
+                    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;input-field col s12&quot;&gt;
+                    &lt;i class=&quot;material-icons prefix&quot;&gt;message&lt;/i&gt;
+                    &lt;textarea id=&quot;textarea1&quot; class=&quot;materialize-textarea&quot;&gt;&lt;/textarea&gt;
+                    &lt;label for=&quot;textarea1&quot;&gt;Message&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;input-field col s12 center&quot;&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn default contact-us-button&quot;&gt;Contact US&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Right Sidebar</h2>
+                <div class="col s12 m-t-10">
+                    <!-- Right Sidebar button -->
+                    <a href="javascript:void(0)" class="waves-effect waves-light btn default toggle-right-sidebar"><i class="material-icons left">menu</i>Open Right Sidebar</a>
+
+                    <!--right sidebar toggle-->
+                    <div class="toggle-right-sidebar toggle-fixed z-depth-1"><i class="material-icons toggle-icon">menu</i>
+                    </div>
+                    <!--Right Sidebar content-->
+                    <aside id="right-sidebar-nav">
+                        <div class="right-sidebar-content">
+                            <ul class="content-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">9 hours ago</span>
+                                        <h4 class="list-content-title">facilisis</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text blue">COMMENT</span>
+                                        <span class="list-date">10 hours ago</span>
+                                        <h4 class="list-content-title">porta augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text green">MEETING</span>
+                                        <span class="list-date">11 hours ago</span>
+                                        <h4 class="list-content-title">Sed libero</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text teal">EVENT</span>
+                                        <span class="list-date">12 hours ago</span>
+                                        <h4 class="list-content-title">sit amet</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">13 hours ago</span>
+                                        <h4 class="list-content-title">augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </aside>
+                    <!--End left sidebar-->
+                    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+                    <!-- //////////////////////////////////////////////////////////////////////////// -->
+                    <!--Page Body-->
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#widgets2-html">HTML</a></li>
+
+                    </ul>
+                </div>
+                <div id="widgets2-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;!--right sidebar toggle--&gt;
+&lt;div class=&quot;toggle-right-sidebar toggle-fixed z-depth-1&quot;&gt;&lt;i class=&quot;material-icons toggle-icon&quot;&gt;menu&lt;/i&gt;&lt;/div&gt;
+&lt;!--Right Sidebar content--&gt;
+&lt;aside id=&quot;right-sidebar-nav&quot;&gt;
+    &lt;div class=&quot;right-sidebar-content&quot;&gt;
+        &lt;ul class=&quot;content-list&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;list-title white-text red&quot;&gt;ORDER&lt;/span&gt;
+                    &lt;span class=&quot;list-date&quot;&gt;9 hours ago&lt;/span&gt;
+                    &lt;h4 class=&quot;list-content-title&quot;&gt;facilisis&lt;/h4&gt;
+                    &lt;p class=&quot;list-content&quot;&gt;
+                        Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                    &lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;list-title white-text blue&quot;&gt;COMMENT&lt;/span&gt;
+                    &lt;span class=&quot;list-date&quot;&gt;10 hours ago&lt;/span&gt;
+                    &lt;h4 class=&quot;list-content-title&quot;&gt;porta augue&lt;/h4&gt;
+                    &lt;p class=&quot;list-content&quot;&gt;
+                        Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                    &lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;list-title white-text green&quot;&gt;MEETING&lt;/span&gt;
+                    &lt;span class=&quot;list-date&quot;&gt;11 hours ago&lt;/span&gt;
+                    &lt;h4 class=&quot;list-content-title&quot;&gt;Sed libero&lt;/h4&gt;
+                    &lt;p class=&quot;list-content&quot;&gt;
+                        Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                    &lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;list-title white-text teal&quot;&gt;EVENT&lt;/span&gt;
+                    &lt;span class=&quot;list-date&quot;&gt;12 hours ago&lt;/span&gt;
+                    &lt;h4 class=&quot;list-content-title&quot;&gt;sit amet&lt;/h4&gt;
+                    &lt;p class=&quot;list-content&quot;&gt;
+                        Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                    &lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;list-title white-text red&quot;&gt;ORDER&lt;/span&gt;
+                    &lt;span class=&quot;list-date&quot;&gt;13 hours ago&lt;/span&gt;
+                    &lt;h4 class=&quot;list-content-title&quot;&gt;augue&lt;/h4&gt;
+                    &lt;p class=&quot;list-content&quot;&gt;
+                        Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                    &lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/aside&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2 class="col s12 header">Update Plan Model</h2>
+                <div class="col s12 m-t-10">
+                    <!-- update plan button -->
+                    <a class="waves-effect waves-light btn default" href="#update-plan-modal"><i class="material-icons left">system_update_alt</i>Update Plan</a>
+
+                    <!-- update plan Modal Structure -->
+                    <div id="update-plan-modal" class="modal update-plan-model">
+                        <div class="modal-content">
+                            <div class="update-plan-title">
+                                <h4 class="center">Upgrade your Account</h4>
+                                <i class="material-icons right me-close modal-close waves-effect waves-red">clear</i>
+                            </div>
+                            <div class="update-plan-body">
+                                <div class="row no-margin">
+                                    <div class="col s12 no-padding">
+                                        <ul class="tabs tabs-fixed-width">
+                                            <li class="tab"><a class="active" href="#pro">PRO</a></li>
+                                            <li class="tab"><a href="#business">BUSINESS</a></li>
+                                            <li class="tab"><a href="#enterprise">ENTERPRISE</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div id="pro" class="row">
+                                        <div class="col s6 l6 m6 update-plan-list">
+                                            <p class="update-plan-list-title">What's Included</p>
+                                            <ul>
+                                                <li>Material Design Icons</li>
+                                                <li>Modals</li>
+                                                <li>Responsive Menu</li>
+                                                <li>Custom Tables</li>
+                                                <li>Form Validations</li>
+                                                <span>... and much more!</span>
+                                            </ul>
+                                        </div>
+                                        <div class="col s6 l6 m6">
+                                            <div class="update-plan-price center">
+
+                                                <p class="update-plan-value"><span class="doller">$</span>29</p>
+                                                <span class="update-plan-format">PER MONTH</span>
+                                                <a class="btn default update-plan-button" href="#">Buy Now</a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="business" class="row">
+                                        <div class="col s6 l6 m6 update-plan-list">
+                                            <p class="update-plan-list-title">What's Included</p>
+                                            <ul>
+                                                <li>Material Design Icons</li>
+                                                <li>Modals</li>
+                                                <li>Responsive Menu</li>
+                                                <li>Custom Tables</li>
+                                                <li>Form Validations</li>
+                                                <span>... and much more!</span>
+                                            </ul>
+                                        </div>
+                                        <div class="col s6 l6 m6">
+                                            <div class="update-plan-price center">
+
+                                                <p class="update-plan-value"><span class="doller">$</span>99</p>
+                                                <span class="update-plan-format">PER MONTH</span>
+                                                <a class="btn default update-plan-button" href="#">Buy Now</a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="enterprise" class="row">
+                                        <div class="col s6 l6 m6 update-plan-list">
+                                            <p class="update-plan-list-title">What's Included</p>
+                                            <ul>
+                                                <li>Material Design Icons</li>
+                                                <li>Modals</li>
+                                                <li>Responsive Menu</li>
+                                                <li>Custom Tables</li>
+                                                <li>Form Validations</li>
+                                                <span>... and much more!</span>
+                                            </ul>
+                                        </div>
+                                        <div class="col s6 l6 m6">
+                                            <form class="update-plan-contact-form">
+                                                <div class="input-field col s12">
+                                                    <input id="update-name" type="text">
+                                                    <label for="update-name">Name</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <input id="update-email" type="email">
+                                                    <label for="update-email">Email</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <textarea id="update-textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="update-textarea1">Message</label>
+                                                </div>
+                                                <div class="input-field col s12 center">
+                                                    <button type="submit" class="btn default update-plan-button">EMAIL US</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col s12 m-t-20">
+                    <ul class="tabs ">
+                        <li class="tab"><a class="active" href="#widgets1-html">HTML</a></li>
+                    </ul>
+                </div>
+                <div id="widgets1-html" class="col s12">
+                    <pre>
+                        <code class="language-html">
+&lt;!-- update plan button --&gt;
+&lt;a class=&quot;waves-effect waves-light btn default&quot; href=&quot;#update-plan-modal&quot;&gt;&lt;i class=&quot;material-icons left&quot;&gt;system_update_alt&lt;/i&gt;Update Plan&lt;/a&gt;
+
+&lt;!-- update plan Modal Structure --&gt;
+&lt;div id=&quot;update-plan-modal&quot; class=&quot;modal update-plan-model&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;update-plan-title&quot;&gt;
+            &lt;h4 class=&quot;center&quot;&gt;Upgrade your Account&lt;/h4&gt;
+            &lt;i class=&quot;material-icons right me-close modal-close waves-effect waves-red&quot;&gt;clear&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;update-plan-body&quot;&gt;
+            &lt;div class=&quot;row no-margin&quot;&gt;
+                &lt;div class=&quot;col s12 no-padding&quot;&gt;
+                    &lt;ul class=&quot;tabs tabs-fixed-width&quot;&gt;
+                        &lt;li class=&quot;tab&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;#pro&quot;&gt;PRO&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#business&quot;&gt;BUSINESS&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#enterprise&quot;&gt;ENTERPRISE&lt;/a&gt;&lt;/li&gt;
+
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;pro&quot; class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col s6 l6 m6 update-plan-list&quot;&gt;
+                        &lt;p class=&quot;update-plan-list-title&quot;&gt;What's Included&lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Material Design Icons&lt;/li&gt;
+                            &lt;li&gt;Modals&lt;/li&gt;
+                            &lt;li&gt;Responsive Menu&lt;/li&gt;
+                            &lt;li&gt;Custom Tables&lt;/li&gt;
+                            &lt;li&gt;Form Validations&lt;/li&gt;
+                            &lt;span&gt;... and much more!&lt;/span&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col s6 l6 m6&quot;&gt;
+                        &lt;div class=&quot;update-plan-price center&quot;&gt;
+
+                            &lt;p class=&quot;update-plan-value&quot;&gt;&lt;span class=&quot;doller&quot;&gt;$&lt;/span&gt;29&lt;/p&gt;
+                            &lt;span class=&quot;update-plan-format&quot;&gt;PER MONTH&lt;/span&gt;
+                            &lt;a class=&quot;btn default update-plan-button&quot; href=&quot;#&quot;&gt;Buy Now&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div id=&quot;business&quot; class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col s6 l6 m6 update-plan-list&quot;&gt;
+                        &lt;p class=&quot;update-plan-list-title&quot;&gt;What's Included&lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Material Design Icons&lt;/li&gt;
+                            &lt;li&gt;Modals&lt;/li&gt;
+                            &lt;li&gt;Responsive Menu&lt;/li&gt;
+                            &lt;li&gt;Custom Tables&lt;/li&gt;
+                            &lt;li&gt;Form Validations&lt;/li&gt;
+                            &lt;span&gt;... and much more!&lt;/span&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col s6 l6 m6&quot;&gt;
+                        &lt;div class=&quot;update-plan-price center&quot;&gt;
+
+                            &lt;p class=&quot;update-plan-value&quot;&gt;&lt;span class=&quot;doller&quot;&gt;$&lt;/span&gt;99&lt;/p&gt;
+                            &lt;span class=&quot;update-plan-format&quot;&gt;PER MONTH&lt;/span&gt;
+                            &lt;a class=&quot;btn default update-plan-button&quot; href=&quot;#&quot;&gt;Buy Now&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;div id=&quot;enterprise&quot; class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col s6 l6 m6 update-plan-list&quot;&gt;
+                        &lt;p class=&quot;update-plan-list-title&quot;&gt;What's Included&lt;/p&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Material Design Icons&lt;/li&gt;
+                            &lt;li&gt;Modals&lt;/li&gt;
+                            &lt;li&gt;Responsive Menu&lt;/li&gt;
+                            &lt;li&gt;Custom Tables&lt;/li&gt;
+                            &lt;li&gt;Form Validations&lt;/li&gt;
+                            &lt;span&gt;... and much more!&lt;/span&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col s6 l6 m6&quot;&gt;
+                        &lt;form class=&quot;update-plan-contact-form&quot;&gt;
+                            &lt;div class=&quot;input-field col s12&quot;&gt;
+                                &lt;input id=&quot;update-name&quot; type=&quot;text&quot;&gt;
+                                &lt;label for=&quot;update-name&quot;&gt;Name&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;input-field col s12&quot;&gt;
+                                &lt;input id=&quot;update-email&quot; type=&quot;email&quot;&gt;
+                                &lt;label for=&quot;update-email&quot;&gt;Email&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;input-field col s12&quot;&gt;
+                                &lt;textarea id=&quot;update-textarea1&quot; class=&quot;materialize-textarea&quot;&gt;&lt;/textarea&gt;
+                                &lt;label for=&quot;update-textarea1&quot;&gt;Message&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;input-field col s12 center&quot;&gt;
+                                &lt;button type=&quot;submit&quot; class=&quot;btn default update-plan-button&quot;&gt;EMAIL US&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+        </div>
+        <!--End page body content-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+    </main>
+    <!--End page body-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Footer-->
+
+    <footer class="page-footer white" id="me-footer">
+        <div class="footer-copyright">
+            <div class="left copyright-text">
+                &copy; MaterialMe
+            </div>
+            <div class="right resources-box">
+                <ul>
+                    <li><a href="#">Terms of Ser.</a></li>
+                    <li><a href="#">SLA</a></li>
+                    <li><a href="#">Pri. &amp; terms</a></li>
+                    <li id="scroll-top-dash"><i class="material-icons">arrow_upward</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Materializecss js -->
+    <script src="../../js/materialize.min.js"></script>
+    <!--Syntax Highlighter prism js-->
+    <script src="../../plugins/prism/prism.js"></script>
+    <!-- Custom Js -->
+    <script src="../../js/init.js"></script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
