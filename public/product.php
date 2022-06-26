@@ -94,7 +94,7 @@
                                         <a href="index.php?page=product&act=detail&id=<?= $row['product_id'] ?>">
                                             <img alt="Image" src="img/product/<?= $row['product_img'] ?>" />
                                         </a>
-                                        <h4><?= $row['product_name'] ?></h4>
+                                        <h4><?= $row['kaos polos'] ?></h4>
                                         <p>
                                             <?= $row['product_desc'] ?>
                                         </p>
@@ -117,7 +117,7 @@
     mysqli_query($conn, "UPDATE product SET product_seen = (product_seen+1) WHERE product_id = '$_GET[id]'");
     $getProduk = mysqli_query($conn, "SELECT * FROM product where product_id = '$_GET[id]'");
     $r = mysqli_fetch_array($getProduk);
-    $pesan = "Hai, saya ingin memesan produk *" . $r['product_name'] . "*, apakah produk masih tersedia? Mohon info lebih lanjut . . .";
+    $pesan = "Hai, saya ingin memesan produk *" . $r['kaos polos'] . "*, apakah produk masih tersedia? Mohon info lebih lanjut . . .";
     $link = urlencode($pesan);
 ?>
 
@@ -126,7 +126,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1><?= $r['product_name'] ?></h1>
+                        <h1><?= $r['kaos polos'] ?></h1>
                         <ol class="breadcrumbs">
                             <li>
                                 <a href="index.php?page=home">Home</a>
@@ -134,7 +134,7 @@
                             <li>
                                 <a href="index.php?page=product">Product</a>
                             </li>
-                            <li><?= $r['product_name'] ?></li>
+                            <li><?= $r['kaos polos'] ?></li>
                         </ol>
                         <hr>
                     </div>

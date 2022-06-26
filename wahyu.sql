@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Feb 28, 2022 at 08:46 PM
--- Server version: 10.3.33-MariaDB
--- PHP Version: 7.4.26
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 26 Jun 2022 pada 12.04
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `englishchalleng_banesa`
+-- Database: `wahyu`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Struktur dari tabel `category`
 --
 
 CREATE TABLE `category` (
@@ -35,18 +34,18 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `category`
+-- Dumping data untuk tabel `category`
 --
 
 INSERT INTO `category` (`category_id`, `category_name`, `update_at`) VALUES
-(1, 'Ekonomi', '2021-10-29 07:02:43'),
-(2, 'Medium', '2021-10-29 07:02:43'),
+(1, 'COTTON COMBED 30s', '2021-10-29 07:02:43'),
+(2, 'COTTON COMBED 24s', '2021-10-29 07:02:43'),
 (3, 'Premium', '2021-10-29 07:02:43');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `media`
+-- Struktur dari tabel `media`
 --
 
 CREATE TABLE `media` (
@@ -60,7 +59,7 @@ CREATE TABLE `media` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `media`
+-- Dumping data untuk tabel `media`
 --
 
 INSERT INTO `media` (`media_id`, `media_title`, `media_desc`, `media_link`, `media_seen`, `media_thumb`, `update_at`) VALUES
@@ -78,7 +77,7 @@ INSERT INTO `media` (`media_id`, `media_title`, `media_desc`, `media_link`, `med
 -- --------------------------------------------------------
 
 --
--- Table structure for table `new_table`
+-- Struktur dari tabel `new_table`
 --
 
 CREATE TABLE `new_table` (
@@ -89,7 +88,7 @@ CREATE TABLE `new_table` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Struktur dari tabel `product`
 --
 
 CREATE TABLE `product` (
@@ -105,7 +104,7 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `product`
+-- Dumping data untuk tabel `product`
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_desc`, `product_category`, `product_img`, `product_stock`, `product_seen`, `product_price`, `update_at`) VALUES
@@ -113,11 +112,11 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_desc`, `product_ca
 (2, 'Banesa Mix Med', '4 Warna Alam', 2, '617c2ed64295e.jpg', 1, 0, 0, '2021-10-29 17:26:46'),
 (3, 'Banesa Sintex Eco', 'Sintetis Berpola', 2, '617c2ecbabdbd.jpg', 1, 1, 0, '2021-10-29 17:26:35'),
 (4, 'Banesa Sulam Med', 'Full Tanah Sulam', 2, '617c2ebddfebb.jpg', 1, 0, 0, '2021-10-29 17:26:21'),
-(5, 'Banesa Sintex Geo', 'Sintetis Full Motif Geo', 2, '617c2ea371022.jpg', 1, 0, 0, '2021-10-29 17:25:55'),
+(5, 'Banesa Sintex Geo', 'Sintetis Full Motif Geo', 2, '617c2ea371022.jpg', 1, 1, 0, '2021-10-29 17:25:55'),
 (6, 'Banesa Mahon Med', '2 Warna Alam', 2, '617c2e95a778c.jpg', 1, 0, 0, '2021-10-29 17:25:41'),
 (7, 'Banesa Sintex Fish', 'Sintesis Berpola', 2, '617c2e8591094.jpg', 1, 0, 0, '2021-10-29 17:25:25'),
 (8, 'Banesa Sintex Full', 'Mix Sintetis Full Pola', 2, '617c2e745296b.jpg', 1, 0, 0, '2021-10-29 17:25:08'),
-(9, 'Banesa Mix Alam', '4 Warna Alam', 2, '617c2e1f99039.jpg', 1, 0, 0, '2021-10-29 17:23:43'),
+(9, 'Banesa Mix Alam', '4 Warna Alam', 2, '617c2e1f99039.jpg', 1, 1, 0, '2021-10-29 17:23:43'),
 (10, 'Banesa Mix Sintex', 'Full Color Motif Segitiga', 2, '617c2def02643.jpg', 1, 0, 0, '2021-10-29 17:22:55'),
 (12, 'Banesa Sintex Bunga Geo', 'Motif Bunga Geometris', 2, '617c2daf1df17.jpg', 1, 0, 0, '2021-10-29 17:21:51'),
 (13, 'BanesaTeratai pink', 'Banesa motif teratai paduan warna pink, ungu dan kuning, mix pewarna tanah dan sintetis', 2, '617c2d858acf0.jpg', 1, 0, 0, '2021-11-04 14:18:52'),
@@ -132,17 +131,17 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_desc`, `product_ca
 (23, 'Banesa Mix Sintex', 'Motif Daun Merak', 2, '617c2c0d861c1.jpg', 1, 0, 0, '2021-10-30 07:38:10'),
 (24, 'Banesa Mix Alam', 'Mix 4 Warna', 2, '617c2bbd484d6.jpg', 1, 0, 0, '2021-10-29 17:13:33'),
 (25, 'Banesa Motif Indigo', 'Kombinasi Indigo Pada Motif', 2, '617c2baddcc40.jpg', 1, 0, 0, '2021-10-29 17:13:17'),
-(32, 'Banesa kupang orange', 'Banesa mix sintetis, motif kupang sudah memiliki haki ', 1, '6183e7b7b64d8.jpg', 0, 2, 0, '2022-01-30 07:45:46'),
+(32, 'Banesa kupang orange', 'Banesa mix sintetis, motif kupang sudah memiliki haki ', 1, '6183e7b7b64d8.jpg', 0, 3, 0, '2022-01-30 07:45:46'),
 (35, 'Banesa Full Color', '-', 1, '6184f633a5a04.jpg', 0, 0, 0, '2022-01-30 07:43:29'),
-(36, 'Banesa 1', '-', 1, '6184f8c20bde8.jpeg', 0, 0, 0, '2022-01-30 07:35:08'),
-(37, 'Banesa 2', 'Tanpa Deskripsi', 1, '6184f938bd229.jpeg', 0, 0, 0, '2022-01-30 07:42:22'),
+(36, 'kaos polos', '-', 1, '6184f8c20bde8.jpeg', 0, 0, 0, '2022-06-25 03:47:35'),
+(37, 'Kaos polos 2', 'Tanpa Deskripsi', 1, '6184f938bd229.jpeg', 0, 0, 0, '2022-06-25 03:49:34'),
 (38, 'Banesa 3', 'Tidak ada ', 1, '6184f950b110f.jpeg', 0, 4, 0, '2022-01-30 07:43:01'),
 (39, 'Banesa 4', '0', 1, '6184f9626d3d6.jpeg', 0, 0, 0, '2022-01-30 07:43:17');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -154,17 +153,17 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`users_id`, `users_name`, `users_email`, `users_password`, `update_at`) VALUES
 (36, 'Seriusman Waruwu', 'serius', '$2y$10$9dmWC2WkHRdMETnrSkDUmO7VXIasvNgG65UXR3KHisLtjgFa.2yla', '2021-10-29 12:22:26'),
-(37, 'Irma Russanti, S.Pd., M.Ds.', 'banesa', '$2y$10$UTdK8.bTZCIDqGcqz10DdeH5yLbYxeVzqXD9yRd/1gTeRgpZcU582', '2021-11-02 09:09:48');
+(38, 'wahyu', 'wahyuarfah2201@gmail.com', '$2y$10$nus8vsJH04xlnGo5oe8KIeBT.S1cU2iRFkoRjGZEBXz7E4g4Bn8qK', '2022-06-20 17:29:50');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `visitor`
+-- Struktur dari tabel `visitor`
 --
 
 CREATE TABLE `visitor` (
@@ -173,7 +172,7 @@ CREATE TABLE `visitor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `visitor`
+-- Dumping data untuk tabel `visitor`
 --
 
 INSERT INTO `visitor` (`visitor_id`, `update_at`) VALUES
@@ -225,88 +224,92 @@ INSERT INTO `visitor` (`visitor_id`, `update_at`) VALUES
 (46, '2022-01-30 07:44:15'),
 (47, '2022-01-30 07:46:04'),
 (48, '2022-01-30 07:46:17'),
-(49, '2022-01-30 07:47:06');
+(49, '2022-01-30 07:47:06'),
+(50, '2022-06-20 17:27:18'),
+(51, '2022-06-20 17:31:36'),
+(52, '2022-06-21 16:31:47'),
+(53, '2022-06-25 02:31:11');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `category`
+-- Indeks untuk tabel `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `media`
+-- Indeks untuk tabel `media`
 --
 ALTER TABLE `media`
   ADD PRIMARY KEY (`media_id`);
 
 --
--- Indexes for table `new_table`
+-- Indeks untuk tabel `new_table`
 --
 ALTER TABLE `new_table`
   ADD PRIMARY KEY (`visitor_id`);
 
 --
--- Indexes for table `product`
+-- Indeks untuk tabel `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`),
   ADD UNIQUE KEY `product_id_UNIQUE` (`product_id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`users_id`);
 
 --
--- Indexes for table `visitor`
+-- Indeks untuk tabel `visitor`
 --
 ALTER TABLE `visitor`
   ADD PRIMARY KEY (`visitor_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT untuk tabel `category`
 --
 ALTER TABLE `category`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `media`
+-- AUTO_INCREMENT untuk tabel `media`
 --
 ALTER TABLE `media`
   MODIFY `media_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `new_table`
+-- AUTO_INCREMENT untuk tabel `new_table`
 --
 ALTER TABLE `new_table`
   MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT untuk tabel `product`
 --
 ALTER TABLE `product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `visitor`
+-- AUTO_INCREMENT untuk tabel `visitor`
 --
 ALTER TABLE `visitor`
-  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

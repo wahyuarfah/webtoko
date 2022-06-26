@@ -33,9 +33,7 @@
         <!--end of row-->
         <div class="row">
             <div class="col-md-6">
-                <p class="type--fine-print">
-                    Telah memperoleh HAKI Sejak 2016
-                </p>
+            
             </div>
         </div>
         <!--end of row-->

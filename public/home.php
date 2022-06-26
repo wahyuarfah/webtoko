@@ -5,15 +5,15 @@
                 <div class="col-md-12">
                     <div class="height-50 imagebg border--round" data-overlay="2">
                         <div class="background-image-holder">
-                            <img alt="background" src="img/bg/bgmain.jpg" />
+                            <img alt="background" src="../app/img/wa22.jpg" />
                         </div>
-                        <div class="pos-vertical-center col-md-6 col-lg-5 pl-5">
-                            <h2>BANESA.</h2>
-                            <p class="lead">
-                                Halo Batik Lovers…
-                                </br>
-                                BANESA kepanjangan dari Batik Tanah Unesa merupakan batik yang memiliki keunikan dan kekhasan menggunakan pewarna alam dari Tanah menjadikan Banesa berbeda dengan batik lainnya. <a href="index.php?page=about">Baca Selengkapnya</a>
-                            </p>
+                        <div align="center">
+                            <h1>KAOS POLOS</h1>
+                            <h2>COTTON COMBED 30s</h2>
+                            <h2>COTTON COMBED 24s</h2>
+                            <h3>SIZE AVAILABLE :</h3>
+                            <h2>S - M - L- XL </h2>
+                            
                         </div>
                     </div>
                 </div>
@@ -69,38 +69,13 @@
         <!--end of container-->
 
 
-        <div class="tab__content">
-            <div class="container switchable switchable--switch">
-                <div class="row">
-                    <div class="col-md-7">
-                        <img alt="Image" src="img/product/15.jpeg" />
-                    </div>
-                    <div class="col-md-5 col-lg-4">
-                        <div class="mt--1">
-                            <h3>Ekplorasi Batik Tanah</h3>
-                            <p class="lead">
-                                BANESA kepanjangan dari Batik Tanah Unesa merupakan produk unggulan hasil penelitian dosen Universitas Negeri Surabaya pewarnaan dengan tanah menjadi keunikan dan kekhasannya telah diteliti sejak tahun 2014 hingga saat ini diproduksi untuk komersialisasi.
-                            </p>
-                            <hr class="short" />
-                            <p>
-                                BANESA kepanjangan dari Batik Tanah Unesa merupakan produk unggulan hasil penelitian dosen Universitas Negeri Surabaya pewarnaan dengan tanah menjadi keunikan dan kekhasannya telah diteliti sejak tahun 2014 hingga saat ini diproduksi untuk komersialisasi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!--end of row-->
-            </div>
-            <!--end of container-->
-        </div>
     </section>
     <section class="cover text-center bg--secondary">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                     <h1> Terima Kasih atas kepercayaan anda</h1>
-                    <p class="lead">
-                        Tak lupa kami ucapakan selamat menggunakan BANESA, batik yang dibuat dengan perpaduan cinta dan seni. BANESA melestarikan Budaya tak Tergerus oleh Zaman.
-                    </p>
+                    
 
                 </div>
                 <div class="col-md-12">
@@ -114,91 +89,4 @@
             <!--end of row-->
         </div>
         <!--end of container-->
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-md-7 col-lg-6">
-                    <div class="slider border--round boxed--border" data-paging="true" data-arrows="true">
-                        <ul class="slides">
-                            <?php
-                            $getImg = mysqli_query($conn, "SELECT * FROM product ORDER BY product_seen DESC LIMIT 12");
-                            while ($r = mysqli_fetch_array($getImg)) {
-                                echo " 
-                                <li>
-                                    <img alt='Image' src='img/product/$r[product_img]' />
-                                </li>
-                            ";
-                            } ?>
-
-
-                        </ul>
-                    </div>
-                    <!--end slider-->
-                </div>
-                <div class="col-md-5 col-lg-4">
-                    <ul class="accordion accordion-2 accordion--oneopen">
-                        <li class="active">
-                            <div class="accordion__title">
-                                <span class="h5">Latar Belakang</span>
-                            </div>
-                            <div class="accordion__content">
-                                <p class="lead">
-                                    BANESA kepanjangan dari Batik Tanah Unesa merupakan produk unggulan hasil penelitian dosen Universitas Negeri Surabaya pewarnaan dengan tanah menjadi keunikan dan kekhasannya telah diteliti sejak tahun 2014 hingga saat ini diproduksi untuk komersialisasi.
-                                </p>
-
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="accordion__title">
-                                <span class="h5">Sejarah</span>
-                            </div>
-                            <div class="accordion__content">
-
-                                <p class="lead">
-                                    BANESA kepanjangan dari Batik Tanah Unesa merupakan produk unggulan hasil penelitian dosen Universitas Negeri Surabaya pewarnaan dengan tanah menjadi keunikan dan kekhasannya telah diteliti sejak tahun 2014 hingga saat ini diproduksi untuk komersialisasi.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="accordion__title">
-                                <span class="h5">Pencapaian</span>
-                            </div>
-                            <div class="accordion__content">
-                                <p class="lead">
-                                    BANESA kepanjangan dari Batik Tanah Unesa merupakan produk unggulan hasil penelitian dosen Universitas Negeri Surabaya pewarnaan dengan tanah menjadi keunikan dan kekhasannya telah diteliti sejak tahun 2014 hingga saat ini diproduksi untuk komersialisasi
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--end accordion-->
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-    <section class="cover unpad--bottom switchable switchable--switch bg--secondary text-center-xs">
-        <div class="container">
-            <div class="row align-items-center justify-content-around">
-                <div class="col-md-6 col-lg-7 mt-0">
-                    <h1>
-                        Irma Russanti, S.Pd., M.Ds
-                    </h1>
-                    <p class="lead">
-                        Dosen D4 Tata Busana Program Vokasi Universitas Negeri Surabaya . . .
-                        <span class="block type--fine-print">
-                            <a href="index.php?page=about">Baca Selengkapnya</a>
-                        </span>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img alt="Image" src="img/profile/owner.png" />
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-</div>
+    
