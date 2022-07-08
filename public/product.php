@@ -21,7 +21,7 @@
                                 <div class="masonry__item col-md-6 col-lg-3" data-masonry-filter="<?= productCategory($r['product_category']) ?>">
                                     <div class="product">
                                         <a href="index.php?page=product&act=detail&id=<?= $r['product_id'] ?>">
-                                            <img alt="Image" src="img/product/<?= $r['product_img'] ?>" />
+                                            <img alt="Image" src="../private/img/product/<?= $r['product_img'] ?>" />
                                         </a>
                                         <a class="block" href="index.php?page=product&act=detail&id=<?= $r['product_id'] ?>">
                                             <div>
@@ -41,76 +41,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Produk Terpopuler</h2>
-                    <div class="slider" data-arrows="false" data-paging="true">
-                        <ul class="slides">
-                            <?php
-                            $getPopProd = mysqli_query($conn, "SELECT * FROM product ORDER BY product_seen DESC LIMIT 6");
-                            while ($row = mysqli_fetch_array($getPopProd)) {
-                            ?>
-
-                                <li class="col-md-4 col-12">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border text-center">
-                                        <a href="index.php?page=product&act=detail&id=<?= $row['product_id'] ?>">
-                                            <img alt="Image" src="img/product/<?= $row['product_img'] ?>" />
-                                        </a>
-                                        <h4><?= $row['product_name'] ?></h4>
-                                        <p>
-                                            <?= $row['product_desc'] ?>
-                                        </p>
-
-                                    </div>
-                                    <!--end feature-->
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                    <!--end of row-->
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Baru Ditambahkan</h2>
-                    <div class="slider" data-arrows="false" data-paging="true">
-                        <ul class="slides">
-                            <?php
-                            $getNewProd = mysqli_query($conn, "SELECT * FROM product ORDER BY update_at DESC LIMIT 6");
-                            while ($row = mysqli_fetch_array($getNewProd)) {
-                            ?>
-
-                                <li class="col-md-4 col-12">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border text-center">
-                                        <a href="index.php?page=product&act=detail&id=<?= $row['product_id'] ?>">
-                                            <img alt="Image" src="img/product/<?= $row['product_img'] ?>" />
-                                        </a>
-                                        <h4><?= $row['kaos polos'] ?></h4>
-                                        <p>
-                                            <?= $row['product_desc'] ?>
-                                        </p>
-
-                                    </div>
-                                    <!--end feature-->
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                    <!--end of row-->
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
     </section>
 <?php
 } elseif ($_GET['act'] == 'detail') {
@@ -150,7 +80,7 @@
                         <div class="slider border--round boxed--border" data-paging="true" data-arrows="true">
                             <ul class="slides">
                                 <li>
-                                    <img alt="Image" src="img/product/<?= $r['product_img'] ?>" />
+                                    <img alt="Image" src="../private/img/product/<?= $r['product_img'] ?>" />
                                 </li>
                             </ul>
                         </div>
@@ -172,16 +102,16 @@
                                 <div class="accordion__content">
                                     <ul class="bullets">
                                         <li>
-                                            <span>Banesa Mix Pewarna Alam</span>
+                                            <span> Mix Pewarna Alam</span>
                                         </li>
                                         <li>
-                                            <span>Banesa Putian</span>
+                                            <span> Putian</span>
                                         </li>
                                         <li>
-                                            <span>Banesa 2 Pewarna Alam</span>
+                                            <span> 2 Pewarna Alam</span>
                                         </li>
                                         <li>
-                                            <span>Banesa Mix Sintetis</span>
+                                            <span> Mix Sintetis</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -263,8 +193,6 @@
             </div>
             <!--end of container-->
         </section>
-
     </div>
-
 <?php
 } ?>

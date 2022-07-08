@@ -23,12 +23,11 @@
                     <div class="col-lg-1 col-md-2 hidden-xs">
                         <div class="bar__module">
                             <a href="index.php">
-
                             </a>
                         </div>
                         <!--end module-->
                     </div>
-                    <div class="col-lg-11 col-md-12 text-center text-right-xs text-right-sm">
+                    <div class="col-lg-8 col-md-12 text-left text-left-xs text-left-sm">
                         <div class="bar__module">
                             <ul class="menu-horizontal text-right">
                                 <li class="">
@@ -47,7 +46,36 @@
                                     </a>
                                 </li>
                             </ul>
+
+
                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 text-right text-right-xs text-right-sm">
+
+                        <ul text-align="right" class="social-list list-inline list--hover">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i class="socicon socicon-facebook icon icon--xs"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="socicon socicon-instagram icon icon--xs"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/">
+                                    <i class="socicon socicon-youtube icon icon--xs"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="http:///6281527424471?text=<?= urlencode('Hai admin Web Toko') ?>">
+                                    <i class=" socicon socicon-whatsapp icon icon--xs"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+
                     </div>
                 </div>
                 <!--end of row-->

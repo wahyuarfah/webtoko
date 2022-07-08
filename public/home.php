@@ -13,7 +13,7 @@
                             <h2>COTTON COMBED 24s</h2>
                             <h3>SIZE AVAILABLE :</h3>
                             <h2>S - M - L- XL </h2>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                                 <div class="masonry__item col-md-6 col-lg-3" data-masonry-filter="<?= productCategory($r['product_category']) ?>">
                                     <div class="product">
                                         <a href="index.php?page=product&act=detail&id=<?= $r['product_id'] ?>">
-                                            <img alt="Image" src="img/product/<?= $r['product_img'] ?>" />
+                                            <img alt="Image" src="../private/img/product/<?= $r['product_img'] ?>" />
                                         </a>
                                         <a class="block" href="index.php?page=product&act=detail&id=<?= $r['product_id'] ?>">
                                             <div>
@@ -74,19 +74,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <h1> Terima Kasih atas kepercayaan anda</h1>
-                    
-
+                    <h1> Selalu siap </h1>
                 </div>
                 <div class="col-md-12">
                     <div class="triptych border--round">
-                        <img alt="Image" src="img/product/16.jpeg" />
-                        <img alt="Image" src="img/product/17.jpeg" />
-                        <img alt="Image" src="img/product/18.jpeg" />
+                        <img alt="Image" src="img/home/1.jpg" />
+                        <img alt="Image" src="img/home/2.jpg" />
+                        <img alt="Image" src="img/home/1.jpg" />
                     </div>
                 </div>
             </div>
             <!--end of row-->
         </div>
         <!--end of container-->
-    
