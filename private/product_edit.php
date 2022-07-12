@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
         `product_price` = '$product_price',
         `product_stock` = '$product_stock',
         `product_img` = '$product_img'
-    ");
+     WHERE `product_id` = '$_GET[id]' ");
         unlink("img/product/$data[product_img]");
     } else {
         $r = mysqli_query($conn, "UPDATE product SET

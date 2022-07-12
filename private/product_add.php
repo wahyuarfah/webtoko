@@ -94,7 +94,8 @@ if (isset($_POST['submit'])) {
                     $categoryData = mysqli_query($conn, "SELECT * FROM `category`");
                     while ($category = mysqli_fetch_array($categoryData)) {
                     ?>
-                        <option value="1">KAOS POLOS 24s</option>
+
+                        <option value="<?= $category['category_id'] ?>"><?= $category['category_name'] ?></option>
                     <?php } ?>
                 </select>
             </div>

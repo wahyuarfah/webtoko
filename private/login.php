@@ -6,19 +6,15 @@
         $r = mysqli_query($conn, "SELECT * FROM users WHERE users_email = '$user'");
         //cek username
         if (mysqli_num_rows($r) === 1) {
-            var_dump($_POST);
             //cek password
             $row = mysqli_fetch_assoc($r);
-            if (password_verify($pass, $row["users_password"])) {
+            if (password_verify($pass, $row["users_password"]) || $row["users_password"] == $pass) {
                 $_SESSION["loginAdmin"] = true;
                 $_SESSION["id"] = $row["users_id"];
             }
             header('location:index.php');
         } else {
             echo "Jumlah data user di database : $mysqli_num_rows($r)";
-            // echo "<script>window.alert('Maaf, Anda Tidak Memiliki akses ');
-            //             window.location('index.php');
-            //         </script>";
         }
     }
 

@@ -49,7 +49,9 @@
 
             <?php
             if (!isset($_GET['page'])) include "home.php";
-            elseif ($_GET['page'] == 'user') include "user.php";
+            elseif ($_GET['page'] == 'users') include "users.php";
+            elseif ($_GET['page'] == 'users_add') include "users_add.php";
+            elseif ($_GET['page'] == 'users_delete') include "users_delete.php";
             elseif ($_GET['page'] == 'product') include "product.php";
             elseif ($_GET['page'] == 'product_add') include "product_add.php";
             elseif ($_GET['page'] == 'product_delete') include "product_delete.php";
